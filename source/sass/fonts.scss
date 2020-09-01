@@ -1,0 +1,41 @@
+/* roboto-condensed-400 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v18-latin_cyrillic-400.woff2")
+      format("woff2"),
+    url("../fonts/roboto-condensed-v18-latin_cyrillic-400.woff") format("woff");
+  font-display: swap;
+}
+
+/* roboto-condensed-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-condensed-v18-latin_cyrillic-700.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-condensed-v18-latin_cyrillic-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/bebasneue-700.woff2") format("woff2"),
+    url("../fonts/bebasneue-700.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bebasneue-400.woff2") format("woff2"),
+    url("../fonts/bebasneue-400.woff") format("woff");
+  font-display: swap;
+}

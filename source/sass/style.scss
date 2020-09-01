@@ -1,3 +1,168 @@
-h1 {
-  color: red;
+@import "../../node_modules/normalize.css/normalize";
+
+@import "./fonts.scss";
+@import "./vars.scss";
+@import "./components/button.scss";
+
+.container {
+  margin: 0 6.438rem;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 2.813rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0.938rem;
+  }
+}
+
+.call {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 1.625rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.625rem;
+
+  @media (max-width: $tablet-width) {
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.5rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 1.25rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.25rem;
+  }
+}
+
+.logo a {
+  transition: opacity 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.25;
+    transition: opacity 0.25s;
+  }
+}
+
+.call a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.25;
+    transition: opacity 0.25s;
+  }
+}
+
+.main-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.875rem 0 0 0;
+}
+
+.about {
+  width: 100%;
+  padding: 3.188rem 0;
+  background: conic-gradient(
+    from 130.31deg at 16.03% 39.06%,
+    $pair-color -46.69deg,
+    $main-color 32.24deg,
+    $pair-color 313.31deg,
+    $main-color 392.24deg
+  );
+}
+
+.about__container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about__header {
+  margin: 0;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 6.813rem;
+  letter-spacing: 0.03rem;
+  line-height: 100%;
+  text-align: right;
+}
+
+.about__text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 7.5rem 4rem 0 0;
+}
+
+.about__location {
+  order: -1;
+  margin: 0 0 0.725rem 0;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 3.0625rem;
+  letter-spacing: 0.03rem;
+  line-height: 3.0625rem;
+  text-align: right;
+}
+
+.about__features-list {
+  position: absolute;
+  left: -8rem;
+  top: 10.5rem;
+  list-style: none;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  text-align: right;
+  line-height: 150%;
+}
+
+.about__socials-list {
+  position: absolute;
+  right: 0;
+  bottom: 2.8125rem;
+  list-style: none;
+  color: #fff;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.about__socials-item {
+  margin: 0 0 1.5rem 0;
+}
+
+.about__socials-item a {
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 0.25;
+    transition: opacity 0.25s;
+  }
+}
+
+.about__image {
+  margin: 0 12.5rem 0 0;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
