@@ -1,3 +1,152 @@
-h1 {
-  color: red;
+/* roboto-condensed-400 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v18-latin_cyrillic-400.woff2")
+      format("woff2"),
+    url("../fonts/roboto-condensed-v18-latin_cyrillic-400.woff") format("woff");
+  font-display: swap;
+}
+
+/* roboto-condensed-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-condensed-v18-latin_cyrillic-700.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-condensed-v18-latin_cyrillic-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/bebasneue-700.woff2") format("woff2"),
+    url("../fonts/bebasneue-700.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bebasneue-400.woff2") format("woff2"),
+    url("../fonts/bebasneue-400.woff") format("woff");
+  font-display: swap;
+}
+
+@import "../../node_modules/normalize.css/normalize";
+
+$desktop-width: 1366px;
+$tablet-width: 768px;
+$mobile-width: 320px;
+
+.container {
+  margin: 0 6.438rem;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 2.813rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0.938rem;
+  }
+}
+
+.call {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 1.625rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.625rem;
+
+  @media (max-width: $tablet-width) {
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.5rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 1.25rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.25rem;
+  }
+}
+
+.call a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.25;
+    transition: opacity 0.25s;
+  }
+}
+
+.main-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.875rem 0 0 0;
+}
+
+.about {
+  width: 100%;
+  padding: 3.188rem 0;
+  background: conic-gradient(
+    from 130.31deg at 16.03% 39.06%,
+    #b80027 -46.69deg,
+    #003d85 32.24deg,
+    #b80027 313.31deg,
+    #003d85 392.24deg
+  );
+}
+
+.about__container {
+  display: flex;
+}
+
+.about__header {
+  margin: 0;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 6.813rem;
+  letter-spacing: 0.03rem;
+  text-align: right;
+}
+
+.about__location {
+  margin: 0;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 3.0625rem;
+  letter-spacing: 0.03rem;
+  text-align: right;
+}
+
+.about__features-list {
+  list-style: none;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  text-align: right;
+  line-height: 150%;
 }
