@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Стартовый шаблон</title>
+    <title>Фитнес центр Supergym</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -28,14 +28,25 @@
     <main>
       <section class="about">
         <div class="about__container container">
-          <div class="about__content">
-            <h1 class="about__header">Фитнесс<br />центр</h1>
-            <p class="about__location">Омск</p>
-            <ul class="about__features-list">
-              <li class="about__features-item">Тренажерный зал</li>
-              <li class="about__features-item">Групповые занятия</li>
-              <li class="about__features-item">Кардио&#8209;зона</li>
-            </ul>
+          <div class="about_content">
+            <div class="about__text">
+              <h1 class="about__header">Фитнес<br />центр</h1>
+              <p class="about__location">Омск</p>
+              <ul class="about__features-list">
+                <li class="about__features-item">Тренажерный зал</li>
+                <li class="about__features-item">Групповые занятия</li>
+                <li class="about__features-item">Кардио&#8209;зона</li>
+              </ul>
+            </div>
+            <div class="about_membership">
+              <a
+                class="button"
+                href="#membership"
+                aria-label="Купить абонемент"
+              >
+                Купить абонемент
+              </a>
+            </div>
           </div>
           <div class="about__image">
             <picture>
@@ -47,31 +58,29 @@
               />
             </picture>
           </div>
-          <div class="about__socials">
-            <ul class="about__socials__items">
-              <li class="about__socials-item">
-                <a href="#">
-                  <svg width="13" height="auto">
-                    <use xlink:href="#icon-fb-type"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="about__socials-item">
-                <a href="#">
-                  <svg width="14">
-                    <use xlink:href="#icon-vk-type"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="about__socials-item">
-                <a href="#">
-                  <svg width="11">
-                    <use xlink:href="#icon-instagram-type"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="about__socials-list">
+            <li class="about__socials-item">
+              <a href="#">
+                <svg width="13" height="9">
+                  <use xlink:href="#icon-fb-type"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="about__socials-item">
+              <a href="#">
+                <svg width="14" height="9">
+                  <use xlink:href="#icon-vk-type"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="about__socials-item">
+              <a href="#">
+                <svg width="11" height="9">
+                  <use xlink:href="#icon-instagram-type"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="gym">
@@ -94,7 +103,7 @@
         <div class="gym__image"></div>
         <div class="gym__video"></div>
       </section>
-      <section class="membership">
+      <section class="membership" id="membership">
         <h2 class="membership__title">Абонементы</h2>
       </section>
       <section class="announcement">

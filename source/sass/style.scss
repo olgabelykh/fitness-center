@@ -1,50 +1,8 @@
-/* roboto-condensed-400 - latin_cyrillic */
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/roboto-condensed-v18-latin_cyrillic-400.woff2")
-      format("woff2"),
-    url("../fonts/roboto-condensed-v18-latin_cyrillic-400.woff") format("woff");
-  font-display: swap;
-}
-
-/* roboto-condensed-700 - latin_cyrillic */
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/roboto-condensed-v18-latin_cyrillic-700.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/roboto-condensed-v18-latin_cyrillic-700.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Bebas Neue";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/bebasneue-700.woff2") format("woff2"),
-    url("../fonts/bebasneue-700.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Bebas Neue";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/bebasneue-400.woff2") format("woff2"),
-    url("../fonts/bebasneue-400.woff") format("woff");
-  font-display: swap;
-}
-
 @import "../../node_modules/normalize.css/normalize";
 
-$desktop-width: 1366px;
-$tablet-width: 768px;
-$mobile-width: 320px;
+@import "./fonts.scss";
+@import "./vars.scss";
+@import "./components/button.scss";
 
 .container {
   margin: 0 6.438rem;
@@ -79,6 +37,16 @@ $mobile-width: 320px;
   }
 }
 
+.logo a {
+  transition: opacity 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.25;
+    transition: opacity 0.25s;
+  }
+}
+
 .call a {
   color: inherit;
   text-decoration: none;
@@ -109,15 +77,17 @@ $mobile-width: 320px;
   padding: 3.188rem 0;
   background: conic-gradient(
     from 130.31deg at 16.03% 39.06%,
-    #b80027 -46.69deg,
-    #003d85 32.24deg,
-    #b80027 313.31deg,
-    #003d85 392.24deg
+    $pair-color -46.69deg,
+    $main-color 32.24deg,
+    $pair-color 313.31deg,
+    $main-color 392.24deg
   );
 }
 
 .about__container {
+  position: relative;
   display: flex;
+  justify-content: flex-end;
 }
 
 .about__header {
@@ -127,20 +97,33 @@ $mobile-width: 320px;
   font-weight: 700;
   font-size: 6.813rem;
   letter-spacing: 0.03rem;
+  line-height: 100%;
   text-align: right;
 }
 
+.about__text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 7.5rem 4rem 0 0;
+}
+
 .about__location {
-  margin: 0;
+  order: -1;
+  margin: 0 0 0.725rem 0;
   color: #fff;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 3.0625rem;
   letter-spacing: 0.03rem;
+  line-height: 3.0625rem;
   text-align: right;
 }
 
 .about__features-list {
+  position: absolute;
+  left: -8rem;
+  top: 10.5rem;
   list-style: none;
   color: #fff;
   font-family: "Roboto Condensed", sans-serif;
@@ -149,4 +132,37 @@ $mobile-width: 320px;
   letter-spacing: 0;
   text-align: right;
   line-height: 150%;
+}
+
+.about__socials-list {
+  position: absolute;
+  right: 0;
+  bottom: 2.8125rem;
+  list-style: none;
+  color: #fff;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.about__socials-item {
+  margin: 0 0 1.5rem 0;
+}
+
+.about__socials-item a {
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 0.25;
+    transition: opacity 0.25s;
+  }
+}
+
+.about__image {
+  margin: 0 12.5rem 0 0;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
