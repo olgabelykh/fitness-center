@@ -1,0 +1,116 @@
+.advantages__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+  background: #f8f9fc;
+}
+
+.advantages__title {
+  margin: 0 0 80px 0;
+}
+
+.advantages__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -60px 0 0;
+}
+
+.advantages__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  margin: 0 60px 0 0;
+}
+
+.advantages-accidental-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  height: 307px;
+  background: #1c3374;
+  color: $negative-color;
+  padding: 65px 34px;
+  align-self: flex-start;
+}
+
+.advantages-accidental-card p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-accidental-card__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-accidental-card__value {
+  display: block;
+  font: normal 700 74px/1 $main-font;
+  margin: 0 0 20px 0;
+}
+
+.advantages-accidental-card__unit {
+  display: block;
+  font: normal 700 26px/1 $main-font;
+}
+
+.advantages-card {
+  display: flex;
+  align-items: flex-start;
+  width: 340px;
+  height: 50%;
+  &:not(:last-child) {
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  }
+}
+
+.advantages-card--bottom {
+  align-items: flex-end;
+}
+
+.advantages-card__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.advantages-card__value {
+  position: relative;
+  margin: 0 20px 0 0;
+}
+
+.advantages-card__value p {
+  font: normal 700 71px/1 $main-font;
+  margin: 0;
+  letter-spacing: 0;
+  padding: 0;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advantages-card__unit {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  font: normal 400 14px/1 $main-font;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advantages-card__title {
+  margin: 0;
+  padding: 0;
+  font: normal 700 22px/1 $main-font;
+  color: $main-color;
+}

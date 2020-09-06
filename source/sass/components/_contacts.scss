@@ -1,0 +1,54 @@
+.contacts__title {
+  margin: 0 0 57px 0;
+}
+
+.contacts__groups {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -60px 0 0;
+}
+
+.contacts__group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 60px 0 0;
+  padding: 0 60px 0 0;
+
+  &:not(:last-child) {
+    border-right: 1px solid #74819c;
+  }
+}
+
+.contacts__item {
+  &:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+
+.contact {
+  font: normal 400 14px/1 $main-font;
+  color: $main-color;
+}
+
+.contact__name {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font: normal 700 16px/1 $main-font;
+}
+
+.contact__text p {
+  margin: 0;
+  padding: 0;
+}
+
+.contact__text p {
+  margin: 0;
+  padding: 0;
+}
+
+.contact__link a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,19 @@
+.logo {
+  width: 89px;
+  height: 20px;
+
+  @media (max-width: $desktop) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 68px;
+    height: 15px;
+  }
+}
+
+.logo svg {
+  width: 100%;
+  height: 100%;
+}

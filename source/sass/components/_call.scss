@@ -1,0 +1,14 @@
+.call {
+  font: normal 700 26px/1 $accidental-font;
+  letter-spacing: 0.03em;
+  color: $negative-color;
+
+  @media (max-width: $desktop) {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 20px;
+  }
+}

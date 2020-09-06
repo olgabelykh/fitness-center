@@ -1,0 +1,24 @@
+<section class="promo">
+  <div class="container promo__container">
+    <h2 class="title promo__title">Акции</h2>
+    <div class="promo__blocks">
+      <div class="promo__block">
+        <include
+          src="./source/html/promo-accidental-card/promo-accidental-card.html"
+          locals='{"period": "Год", "price": "4999", "text": "Безлимитный абонемент в тренажерный зал"}'
+        >
+        </include>
+      </div>
+      <div class="promo__block">
+        <include
+          src="./source/html/promo-card/promo-card.html"
+          locals='{"title": "Месяц бесплатно", "text": "Приведи друга, получи абонемент в подарок"}'
+        ></include>
+        <include
+          src="./source/html/promo-card/promo-card.html"
+          locals='{"title": "Скидка 20%", "text": "Корпоративный фитнес  с командой"}'
+        ></include>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+.review-card {
+  width: 560px;
+  background: #1c3374;
+  padding: 62px;
+  color: $negative-color;
+}
+
+.review-card__text {
+  font: normal 400 16px/1.4 $main-font;
+}
+
+.review-card__author {
+  font: normal 700 20px/1 $main-font;
+}

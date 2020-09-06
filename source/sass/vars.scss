@@ -1,9 +1,14 @@
+// fonts
+$main-font: "Roboto Condensed", serif;
+$accidental-font: "Bebas Neue", sans-serif;
+
 // colors
-$main-color: #003d85;
-$pair-color: #b80027;
-$negative-color: #fff;
+$main-color: #102654;
+$negative-color: #ffffff;
+$color-blue-1: #003d85;
+$color-red-1: #b80027;
 
 // breakpoints
-$desktop-width: 1366px;
-$tablet-width: 768px;
-$mobile-width: 320px;
+$desktop: 1365px;
+$tablet: 767px;
+$mobile: 319px;
