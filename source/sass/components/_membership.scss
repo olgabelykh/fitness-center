@@ -1,40 +1,74 @@
 .membership {
   background: #f8f9fc;
 }
+
 .membership__container {
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 120px 0;
-}
 
-.membership__list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
+  @media (max-width: $desktop) {
+    padding: 100px 0;
   }
 }
 
 .membership__title {
   align-self: center;
-  margin: 0 0 50px 0;
+  margin: 0 0 16px 0;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 10px;
+    font-size: 42px;
+  }
+}
+
+.membership__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -40px -40px 0;
+  padding: 0;
+}
+
+.membership__item {
+  margin: 0 40px 40px 0;
 }
 
 .membership-card {
-  box-sizing: border-box;
   display: flex;
-  padding: 68px 0;
-  justify-content: space-between;
+  flex-shrink: 0;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  background: #fff;
   width: 360px;
   height: 450px;
+  padding: 63px 0 71px 0;
   color: $main-color;
+  background: #fff;
+  border: 7px solid #fff;
+  z-index: 100;
+
+  @media (max-width: $desktop) {
+    width: 442px;
+  }
+
+  &:hover {
+    border-style: solid;
+    border-image-slice: 1;
+    border-width: 7px;
+    border-image-source: linear-gradient(to right bottom, #ed0233, #003eb7);
+  }
+
+  &:hover .button {
+    color: $negative-color;
+    background: linear-gradient(
+      97.05deg,
+      $color-red-1 17.6%,
+      $color-blue-1 95.31%
+    );
+    border: none;
+  }
 }
 
 .membership-card__name {
@@ -44,13 +78,14 @@
 }
 
 .membership-card__name {
-  margin: 0 0 22px 0;
+  margin: 0 0 10px 0;
   padding: 0;
   font: normal 700 1.625rem/1 $main-font;
 }
 
 .membership-card__details p {
   padding: 0;
+  margin: 0;
   font: normal 300 1rem/1.5 $main-font;
   text-align: center;
 }
@@ -71,13 +106,17 @@
 .membership-card__price-value p {
   position: absolute;
   left: 50%;
-  bottom: 0px;
+  bottom: 4px;
   transform: translateX(-50%);
   margin: 0;
   padding: 0;
   font: normal 700 4rem/1 $main-font;
   text-align: center;
   color: #103aae;
+}
+
+.membership-card__price-currency {
+  color: $main-color;
 }
 
 .membership__tab-list {
@@ -89,6 +128,10 @@
   display: flex;
   width: 340px;
   justify-content: space-between;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 45px;
+  }
 
   &:after {
     content: "";
@@ -102,18 +145,23 @@
 }
 
 .membership__tab-item {
-  font: normal 400 1.25rem/1 $main-font;
+  font: normal 400 20px/1 $main-font;
   color: $main-color;
   padding: 20px 0;
+
+  @media screen {
+    font-size: 18px;
+  }
 }
 
 .membership__tab-item--active {
+  position: relative;
   &:after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 30%;
+    width: 100%;
     height: 2px;
     background-color: #d10a42;
   }

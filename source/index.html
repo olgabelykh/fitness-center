@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="Description" content="Современный Фитнес центр Supergym">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Фитнес центр Supergym</title>
@@ -15,100 +16,9 @@
     <main>
       <h1 class="visually-hidden">Фитнес центр Supergym</h1>
       <include src="./source/html/about/about.html"></include>
-      <section class="gym">
-        <div class="gym__container container">
-          <div class="gym__content">
-            <h2 class="title gym__header">Тренажерный зал</h2>
-            <p class="lead gym__lead">Просторный зал площадью 900 кв/м</p>
-            <div class="gym__text">
-              <p>
-                Supergym – самый test самый большой фитнес центр за Уралом и
-                идеальное место для укрепления тела и здоровья. Тренажерный зал
-                оснащен всем необходимым современным оборудованием для всех
-                спортсменов.
-              </p>
-              <p>
-                В зале расположены отдельная зона для Crossfit и кардио-зона с
-                40 тренажерами. Также в фитнес центре есть несколько
-                оборудованных залов для различных видов групповых занятий.
-              </p>
-            </div>
-          </div>
-          <div class="gym__image">
-            <img src="img/gym-1@1x.jpg" alt="" />
-          </div>
-          <div class="gym__video">
-            <img src="./img/gym-2@1x.jpg" alt="" />
-          </div>
-        </div>
-      </section>
-      <section class="membership" id="membership">
-        <div class="container membership__container">
-          <h2 class="title membership__title">Абонементы</h2>
-          <ul class="membership__tab-list">
-            <li class="membership__tab-item membership__tab-item--active">
-              1 месяц
-            </li>
-            <li class="membership__tab-item">6 месяцев</li>
-            <li class="membership__tab-item">12 месяцев</li>
-          </ul>
-          <ul class="membership__list">
-            <li class="membership__item membership-card">
-              <div class="membership-card__title">
-                <h3 class="membership-card__name">С тренером</h3>
-                <div class="membership-card__details">
-                  <p>12 занятий</p>
-                </div>
-              </div>
-              <div class="membership-card__price">
-                <div class="membership-card__price-shadow">
-                  <p>5000</p>
-                </div>
-                <div class="membership-card__price-value">
-                  <p>5000</p>
-                </div>
-              </div>
-              <button class="button" type="button">Купить абонемент</button>
-            </li>
-            <li class="membership__item membership-card">
-              <div class="membership-card__title">
-                <h3 class="membership-card__name">Дневной</h3>
-                <div class="membership-card__details">
-                  <p>с 8:00 до 17:00</p>
-                </div>
-              </div>
-              <div class="membership-card__price">
-                <div class="membership-card__price-shadow">
-                  <p>1700</p>
-                </div>
-                <div class="membership-card__price-value">
-                  <p>1700</p>
-                </div>
-              </div>
-              <button class="button button--active" type="button">
-                Купить абонемент
-              </button>
-            </li>
-            <li class="membership__item membership-card">
-              <div class="membership-card__title">
-                <h3 class="membership-card__name">Полный день</h3>
-                <div class="membership-card__details">
-                  <p>с 8:00 до 22:00</p>
-                </div>
-              </div>
-              <div class="membership-card__price">
-                <div class="membership-card__price-shadow">
-                  <p>2700</p>
-                </div>
-                <div class="membership-card__price-value">
-                  <p>2700</p>
-                </div>
-              </div>
-              <button class="button" type="button">Купить абонемент</button>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <include src="./source/html/gym/gym.html"></include>
+      <!-- <include src="./source/html/membership/membership.html"></include>
+
       <section class="announcement">
         <div class="container announcement__container">
           <div class="announcement__content">
@@ -122,8 +32,8 @@
             <img src="./img/announcement@1x.jpg" alt="" />
           </div>
         </div>
-      </section>
-      <section class="instructors">
+      </section> -->
+      <!-- <section class="instructors">
         <h2 class="title instructors__title">Тренеры</h2>
         <div class="instructors__slider">
           <div class="instructors__slider-wrapper">
@@ -234,6 +144,6 @@
         </div>
       </div>
     </main>
-    <include src="./source/html/footer/footer.html"></include>
+    <include src="./source/html/footer/footer.html"></include> -->
   </body>
 </html>

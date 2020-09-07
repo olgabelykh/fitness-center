@@ -27,6 +27,7 @@
 
 .layout {
   font: normal 300 16px/1.5 $main-font;
+  min-height: 100vh;
 }
 .container {
   max-width: 1160px;
@@ -38,6 +39,12 @@
 
   @media (max-width: 720px) {
     margin: 0 15px;
+  }
+}
+
+.desktop-only {
+  @media (min-width: 1366px) {
+    display: none;
   }
 }
 
