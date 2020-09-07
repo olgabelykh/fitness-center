@@ -1,14 +1,87 @@
 <section class="announcement">
   <div class="container announcement__container">
     <div class="announcement__content">
-      <h2 class="announcement__title">SUPER GAMES</h2>
-      <p class="announcement__lead">Ежегодные соревнования по CrossFit</p>
-      <div class="announcement__date"></div>
-      <div class="announcement__time"></div>
-      <a href="#" class="button button--accidental">заполнить заявку</a>
+      <div class="announcement-title__inner-container inner-container">
+        <div class="inner-container__row">
+          <div class="announcement__title inner-container__col">SUPER</div>
+          <div class="announcement__date inner-container__col">
+            <span class="announcement__date-name">Дата</span>
+            <div
+              class="announcement__date-value announcement__date-value--date"
+            >
+              <time datetime="2019-03-7 12:00">7</time>
+              <p>марта<br />2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-container__row">
+          <div class="announcement__title inner-container__col">GAMES</div>
+          <div class="announcement__date inner-container__col">
+            <span class="announcement__date-name">Время</span>
+            <div class="announcement__date-value">
+              <time datetime="2019-03-7 12:00">12:00</time>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="announcement__text">
+        <p>Ежегодные соревнования по CrossFit</p>
+      </div>
+      <a
+        href="#"
+        class="button button--accidental announcement__button opacity-effect"
+        >заполнить заявку</a
+      >
     </div>
     <div class="announcement__image">
-      <img src="./img/announcement@1x.jpg" alt="" />
+      <picture>
+        <source
+          type="image/webp"
+          media="(max-width: 320px)"
+          srcset="
+            img/announcement-mob@1x.webp 1x,
+            img/announcement-mob@2x.webp 2x
+          "
+        />
+        <source
+          type="image/jpg"
+          media="(max-width: 320px)"
+          srcset="
+            img/announcement-mob@1x.jpg 1x,
+            img/announcement-mob@2x.jpg 2x
+          "
+        />
+        <source
+          type="image/webp"
+          media="(max-width: 768px)"
+          srcset="
+            img/announcement-tab@1x.webp 1x,
+            img/announcement-tab@2x.webp 2x
+          "
+        />
+        <source
+          type="image/jpg"
+          media="(max-width: 768px)"
+          srcset="
+            img/announcement-tab@1x.jpg 1x,
+            img/announcement-tab@2x.jpg 2x
+          "
+        />
+        <source
+          type="image/webp"
+          srcset="img/announcement@1x.webp 1x, img/announcement@2x.webp 2x"
+        />
+        <source
+          type="image/jpg"
+          srcset="img/announcement@1x.jpg 1x, img/announcement@2x.jpg 2x"
+        />
+        <img
+          src="img/announcement@1x.jpg"
+          alt="Удар по воде"
+          width="660"
+          height="500"
+        />
+      </picture>
     </div>
   </div>
 </section>

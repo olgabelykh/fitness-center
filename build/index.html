@@ -254,7 +254,61 @@
   </div>
 </section>
 
-      <!-- <include src="./source/html/announcement/announcement.html"></include> -->
+      <section class="announcement">
+  <div class="container announcement__container">
+    <div class="announcement__content">
+      <div class="announcement-title__inner-container inner-container">
+        <div class="inner-container__row">
+          <div class="announcement__title inner-container__col">SUPER</div>
+          <div class="announcement__date inner-container__col">
+            <span class="announcement__date-name">Дата</span>
+            <div class="announcement__date-value announcement__date-value--date">
+              <time datetime="2019-03-7 12:00">7</time>
+              <p>марта<br>2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-container__row">
+          <div class="announcement__title inner-container__col">GAMES</div>
+          <div class="announcement__date inner-container__col">
+            <span class="announcement__date-name">Время</span>
+            <div class="announcement__date-value">
+              <time datetime="2019-03-7 12:00">12:00</time>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="announcement__text">
+        <p>Ежегодные соревнования по CrossFit</p>
+      </div>
+      <a href="#" class="button button--accidental announcement__button opacity-effect">заполнить заявку</a>
+    </div>
+    <div class="announcement__image">
+      <picture>
+        <source type="image/webp" media="(max-width: 320px)" srcset="
+            img/announcement-mob@1x.webp 1x,
+            img/announcement-mob@2x.webp 2x
+          ">
+        <source type="image/jpg" media="(max-width: 320px)" srcset="
+            img/announcement-mob@1x.jpg 1x,
+            img/announcement-mob@2x.jpg 2x
+          ">
+        <source type="image/webp" media="(max-width: 768px)" srcset="
+            img/announcement-tab@1x.webp 1x,
+            img/announcement-tab@2x.webp 2x
+          ">
+        <source type="image/jpg" media="(max-width: 768px)" srcset="
+            img/announcement-tab@1x.jpg 1x,
+            img/announcement-tab@2x.jpg 2x
+          ">
+        <source type="image/webp" srcset="img/announcement@1x.webp 1x, img/announcement@2x.webp 2x">
+        <source type="image/jpg" srcset="img/announcement@1x.jpg 1x, img/announcement@2x.jpg 2x">
+        <img src="img/announcement@1x.jpg" alt="Удар по воде" width="660" height="500">
+      </picture>
+    </div>
+  </div>
+</section>
+
       <!-- <section class="instructors">
         <h2 class="title instructors__title">Тренеры</h2>
         <div class="instructors__slider">
@@ -265,8 +319,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="advantages">
+      </section> -->
+      <!-- <section class="advantages">
         <div class="container advantages__container">
           <h2 class="title advantages__title">Наши преимущества</h2>
           <div class="advantages__content">
@@ -339,8 +393,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <include src="./source/html/promo/promo.html"></include>
+      </section> -->
+      <!-- <include src="./source/html/promo/promo.html"></include>
       <include src="./source/html/reviews/reviews.html"></include>
       <div class="contacts__blocks">
         <div class="contacts__block">
@@ -364,8 +418,8 @@
         <div class="contacts__block">
           <include src="./source/html/contacts/contacts.html"></include>
         </div>
-      </div>
+      </div> -->
     </main>
-    <include src="./source/html/footer/footer.html"></include> -->
-  </main></body>
+    <!-- <include src="./source/html/footer/footer.html"></include> -->
+  </body>
 </html>

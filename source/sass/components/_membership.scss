@@ -1,20 +1,20 @@
 .membership {
+  padding: 120px 0;
   background: #f8f9fc;
+
+  @media (max-width: $desktop) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 70px 0;
+  }
 }
 
 .membership__container {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 120px 0;
-
-  @media (max-width: $desktop) {
-    padding: 100px 0;
-  }
-
-  @media (max-width: $desktop) {
-    padding: 70px 0;
-  }
 }
 
 .membership__title {
