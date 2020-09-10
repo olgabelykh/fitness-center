@@ -1,14 +1,26 @@
 .promo-accidental-card {
+  width: 100%;
   display: flex;
   color: $negative-color;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
 }
+
+// content
 
 .promo-accidental-card__content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-grow: 1;
   background: #ed0233;
   padding: 45px;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .promo-accidental-card__period {
@@ -44,7 +56,6 @@
   padding: 0 0 6px 0;
   font: normal 700 14px/1 $main-font;
   text-transform: uppercase;
-  text-decoration: none;
   color: inherit;
 
   &:after {
@@ -55,5 +66,34 @@
     width: 100%;
     height: 1px;
     background: $negative-color;
+  }
+}
+
+// image
+
+.promo-accidental-card__image {
+  flex-shrink: 0;
+  width: 280px;
+  height: 462px;
+  object-fit: cover;
+  overflow: hidden;
+
+  @media (max-width: $desktop) {
+    width: 399px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    height: 299px;
+  }
+}
+
+.promo-accidental-card__image img {
+  height: 100%;
+  width: auto;
+
+  @media (max-width: $desktop) {
+    width: 100%;
+    height: auto;
   }
 }

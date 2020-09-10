@@ -1,23 +1,37 @@
 <section class="promo">
   <div class="container promo__container">
     <h2 class="title promo__title">Акции</h2>
-    <div class="promo__blocks">
-      <div class="promo__block">
+    <div class="promo__blocks promo-blocks">
+      <div class="promo-block">
         <include
           src="./source/html/promo-accidental-card/promo-accidental-card.html"
           locals='{"period": "Год", "price": "4999", "text": "Безлимитный абонемент в тренажерный зал"}'
         >
         </include>
       </div>
-      <div class="promo__block">
-        <include
-          src="./source/html/promo-card/promo-card.html"
-          locals='{"title": "Месяц бесплатно", "text": "Приведи друга, получи абонемент в подарок"}'
-        ></include>
-        <include
-          src="./source/html/promo-card/promo-card.html"
-          locals='{"title": "Скидка 20%", "text": "Корпоративный фитнес  с командой"}'
-        ></include>
+      <div class="promo-block">
+        <div class="promo-block__item promo-card">
+          <div class="promo-card__title">
+            <h3>Месяц бесплатно</h3>
+          </div>
+          <div class="promo-card__text">
+            <p>Приведи друга, получи абонемент в подарок</p>
+          </div>
+          <div class="promo-card__link opacity-effect">
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="promo-block__item promo-card">
+          <div class="promo-card__title">
+            <h3>Скидка 20%</h3>
+          </div>
+          <div class="promo-card__text">
+            <p>Корпоративный фитнес с командой</p>
+          </div>
+          <div class="promo-card__link opacity-effect">
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
