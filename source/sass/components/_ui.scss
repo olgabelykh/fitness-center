@@ -10,10 +10,18 @@
 .title h2 {
   margin: 0;
   padding: 0;
-  font: normal 700 3.0625rem/1 $accidental-font;
+  font: normal 700 49px/1 $accidental-font;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: $main-color;
+
+  @media (max-width: $desktop) {
+    font: normal 700 42px/1 $accidental-font;
+  }
+
+  @media (max-width: $tablet) {
+    font: normal 700 32px/1 $accidental-font;
+  }
 }
 
 .lead {
