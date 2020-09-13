@@ -1,0 +1,138 @@
+.instructors__container {
+  padding: 0 0 120px 0;
+}
+.instructors__title {
+  padding: 0 105px;
+  margin: 0 0 62px 0;
+}
+
+.instructor-card {
+  position: relative;
+  width: 260px;
+  height: 294px;
+  overflow: hidden;
+
+  @media (max-width: $tablet) {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.instructor-card__content {
+  box-sizing: border-box;
+  position: absolute;
+  width: 260px;
+  min-height: 101px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 58px 55px 0 46px;
+  color: $negative-color;
+}
+
+.instructor-card__name h3 {
+  margin: 0;
+}
+
+.instructor-card__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 0;
+  overflow: auto;
+  font: normal 300 14px/1.5 $main-font;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.instructor-card__type p {
+  margin: 0 0 25px 0;
+}
+
+.instructor-card__details-list {
+  list-style: disc;
+  padding: 0 0 0 16px;
+}
+
+.instructor-card__details-item {
+  &:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}
+
+.instructor-card:hover .instructor-card__content {
+  height: 100%;
+}
+
+.instructor-card:hover .instructor-card__details {
+  height: auto;
+  opacity: 1;
+}
+
+.instructor-card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(16, 38, 84, 0.89);
+  opacity: 0;
+  transition: height 0.3s, opacity 0.3s;
+}
+
+.instructor-card:hover::before {
+  height: 100%;
+  opacity: 1;
+}
+
+.swiper-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slider__wrapper {
+  position: relative;
+  width: calc(100% - 94px);
+  margin: 0 47px;
+  padding: 0 56px;
+  display: flex;
+
+  @media (max-width: $tablet) {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+    padding: 0 32px;
+  }
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  width: 16px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.slider__button svg {
+  width: 100%;
+  height: auto;
+  fill: none;
+}
+
+.slider__button--prev {
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) translateY(-50%) translateX(-100%);
+}
+
+.slider__button--next {
+  right: 0;
+}

@@ -8,3 +8,22 @@
 .reviews__title {
   margin: 0 0 62px 0;
 }
+
+.reviews-slider__wrapper {
+  position: relative;
+  display: flex;
+  width: 672px;
+  padding: 0 56px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet) {
+    width: 290px;
+    flex-direction: column;
+    padding: 0 25px;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  box-sizing: border-box;
+}

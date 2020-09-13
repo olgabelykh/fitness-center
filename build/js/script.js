@@ -1,15 +1,48 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+"use strict";
 
-pageHeader.classList.remove('page-header--nojs');
+(function () {
+  var instructorsSlider = document
+    .querySelector("#instructors")
+    .querySelector(".swiper-container");
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+  if (!instructorsSlider) {
+    return;
   }
-});
+
+  var instructorsSwiper = new Swiper(instructorsSlider, {
+    slidesPerView: "auto",
+    spaceBetween: 40,
+    loopedSlides: 8,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    updateOnWindowResize: true,
+
+    navigation: {
+      nextEl: ".slider--instructors .slider__button--next",
+      prevEl: ".slider--instructors .slider__button--prev",
+    },
+  });
+})();
+
+(function () {
+  var reviewsSlider = document
+    .querySelector("#reviews")
+    .querySelector(".swiper-container");
+
+  if (!reviewsSlider) {
+    return;
+  }
+
+  var reviewsSwiper = new Swiper(reviewsSlider, {
+    slidesPerView: 1,
+    loopedSlides: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    updateOnWindowResize: true,
+
+    navigation: {
+      nextEl: ".slider--reviews .slider__button--next",
+      prevEl: ".slider--reviews .slider__button--prev",
+    },
+  });
+})();

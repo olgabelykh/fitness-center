@@ -6,6 +6,10 @@
   display: flex;
   flex-flow: row wrap;
   margin: 0 -60px 0 0;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
 }
 
 .contacts__group {
@@ -16,6 +20,10 @@
 
   &:not(:last-child) {
     border-right: 1px solid #74819c;
+    @media (max-width: $tablet) {
+      border: none;
+      margin: 0 0 35px 0;
+    }
   }
 }
 

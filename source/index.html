@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Фитнес центр Supergym</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="layout">
@@ -19,35 +20,28 @@
       <include src="./source/html/gym/gym.html"></include>
       <include src="./source/html/membership/membership.html"></include>
       <include src="./source/html/announcement/announcement.html"></include>
-      <!-- <section class="instructors">
-        <h2 class="title instructors__title">Тренеры</h2>
-        <div class="instructors__slider">
-          <div class="instructors__slider-wrapper">
-            <div class="instructors__slider-item instructor-card">
-              <div class="instructor-card__image"></div>
-              <h3 class="instructor-card__name">Анна Павлова</h3>
-            </div>
-          </div>
-        </div>
-      </section> -->
+      <include src="./source/html/instructors/instructors.html"></include>
 
       <include src="./source/html/advantages/advantages.html"></include>
       <include src="./source/html/promo/promo.html"></include>
-      <!-- <include src="./source/html/reviews/reviews.html"></include> -->
-      <!-- <div class="contacts__blocks">
-        <div class="contacts__block">
+      <include src="./source/html/reviews/reviews.html"></include>
+      <div class="contacts__blocks">
+        <div class="contacts__block contacts__block--dark">
           <section class="free-training">
-            <h2 class="title free-training">БЕСПЛАТНОЕ занятие</h2>
+            <h2 class="title free-training__title">БЕСПЛАТНОЕ занятие</h2>
             <form class="free-training__sign-up">
-              <label>
-                Имя
-                <input type="text" required />
-              </label>
-              <label>
-                Телефон
-                <input type="email" required />
-              </label>
-              <button class="button button--accidental" type="submit">
+              <div class="form__field-set">
+                <div class="form__field">
+                  <input type="text" placeholder="Имя" required />
+                </div>
+                <div class="form__field">
+                  <input type="email" placeholder="Телефон" required />
+                </div>
+              </div>
+              <button
+                class="button button--accidental free-training__submit"
+                type="submit"
+              >
                 отправить
               </button>
             </form>
@@ -56,8 +50,10 @@
         <div class="contacts__block">
           <include src="./source/html/contacts/contacts.html"></include>
         </div>
-      </div> -->
+      </div>
     </main>
-    <!-- <include src="./source/html/footer/footer.html"></include> -->
+    <include src="./source/html/footer/footer.html"></include>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
