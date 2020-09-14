@@ -6,54 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Фитнес центр Supergym</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="layout">
     <div style="display: none">
       <include src="./build/img/sprite_auto.svg"></include>
     </div>
-    <include src="./source/html/header/header.html"></include>
+    <include src="./source/html/header.html"></include>
     <main>
       <h1 class="visually-hidden">Фитнес центр Supergym</h1>
-      <include src="./source/html/about/about.html"></include>
-      <include src="./source/html/gym/gym.html"></include>
-      <include src="./source/html/membership/membership.html"></include>
-      <include src="./source/html/announcement/announcement.html"></include>
-      <include src="./source/html/instructors/instructors.html"></include>
-
-      <include src="./source/html/advantages/advantages.html"></include>
-      <include src="./source/html/promo/promo.html"></include>
-      <include src="./source/html/reviews/reviews.html"></include>
-      <div class="contacts__blocks">
-        <div class="contacts__block contacts__block--dark">
-          <section class="free-training">
-            <h2 class="title free-training__title">БЕСПЛАТНОЕ занятие</h2>
-            <form class="free-training__sign-up">
-              <div class="form__field-set">
-                <div class="form__field">
-                  <input type="text" placeholder="Имя" required />
-                </div>
-                <div class="form__field">
-                  <input type="email" placeholder="Телефон" required />
-                </div>
-              </div>
-              <button
-                class="button button--accidental free-training__submit"
-                type="submit"
-              >
-                отправить
-              </button>
-            </form>
-          </section>
-        </div>
-        <div class="contacts__block">
-          <include src="./source/html/contacts/contacts.html"></include>
-        </div>
-      </div>
+      <include src="./source/html/about.html"></include>
+      <include src="./source/html/gym.html"></include>
+      <include src="./source/html/membership.html"></include>
+      <include src="./source/html/announcement.html"></include>
+      <include src="./source/html/instructors.html"></include>
+      <include src="./source/html/advantages.html"></include>
+      <include src="./source/html/promo.html"></include>
+      <include src="./source/html/reviews.html"></include>
+      <include src="./source/html/contacts.html"></include>
     </main>
-    <include src="./source/html/footer/footer.html"></include>
-    <script src="./js/swiper-bundle.min.js"></script>
+    <include src="./source/html/footer.html"></include>
+    <script src="./js/vendors/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
