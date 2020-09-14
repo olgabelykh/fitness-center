@@ -1,6 +1,7 @@
 .instructors__container {
   padding: 0 0 120px 0;
 }
+
 .instructors__title {
   padding: 0 105px;
   margin: 0 0 62px 0;
@@ -71,7 +72,7 @@
   opacity: 1;
 }
 
-.instructor-card:before {
+.instructor-card::before {
   content: "";
   position: absolute;
   left: 0;

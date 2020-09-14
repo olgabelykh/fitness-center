@@ -80,6 +80,7 @@
     align-items: center;
     margin: 0 0 35px 0;
   }
+
   @media (max-width: 320px) {
     margin: 0 0 32px 0;
   }
@@ -92,6 +93,7 @@
     max-width: 75%;
     margin: 0;
     text-align: center;
+
     &:not(:first-child) {
       display: none;
     }

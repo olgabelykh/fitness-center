@@ -58,7 +58,7 @@
   text-transform: uppercase;
   color: inherit;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     left: 0;

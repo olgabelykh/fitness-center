@@ -5,6 +5,7 @@
 .free-training__title {
   color: $negative-color;
 }
+
 .free-training__title h2 {
   color: inherit;
 }
@@ -31,6 +32,7 @@
       margin: 0 0 20px 0;
     }
   }
+
   @media (max-width: $tablet) {
     width: 100%;
   }
@@ -46,6 +48,7 @@
   border: none;
   border-bottom: 1px solid $color-grey-2;
   outline: none;
+
   @media (max-width: $tablet) {
     width: 100%;
   }

@@ -1,6 +1,7 @@
 .about {
   width: 100%;
   padding: 51px 0;
+  /* stylelint-disable */
   background: conic-gradient(
     from 130.31deg at 16.03% 39.06%,
     $color-red-1 -46.69deg,
@@ -8,6 +9,7 @@
     $color-red-1 313.31deg,
     $color-blue-1 392.24deg
   );
+  /* stylelint-enable */
 
   @media (max-width: 1200px) {
     padding: 82px 0;

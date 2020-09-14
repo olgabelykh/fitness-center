@@ -60,10 +60,6 @@
   &--active {
     color: $negative-color;
     border: none;
-    background: linear-gradient(
-      97.05deg,
-      $color-red-1 17.6%,
-      $color-blue-1 95.31%
-    );
+    background: linear-gradient(97.05deg, $color-red-1 17.6%, $color-blue-1 95.31%);
   }
 }
