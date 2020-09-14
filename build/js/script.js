@@ -46,3 +46,32 @@
     },
   });
 })();
+
+(function () {
+  var membershipTabs = document.querySelector("#membership-tabs");
+
+  if (!membershipTabs) {
+    return;
+  }
+
+  membershipTabs.querySelectorAll(".membership__tab-item").forEach(function (item) {
+    item.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      var activeTab = membershipTabs.querySelector(".membership__tab-item--active");
+      if (item.isSameNode(activeTab)) {
+        return;
+      }
+      activeTab.classList.remove("membership__tab-item--active");
+      item.classList.add("membership__tab-item--active");
+
+      var activeListId = activeTab.querySelector("a").getAttribute("href");
+      var newActiveListId = item.querySelector("a").getAttribute("href");
+
+      var activeList = document.querySelector(activeListId);
+      activeList.classList.remove("membership__list--active");
+      var newActiveList = document.querySelector(newActiveListId);
+      newActiveList.classList.add("membership__list--active");
+    });
+  });
+})();

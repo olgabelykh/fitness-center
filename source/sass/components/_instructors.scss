@@ -1,10 +1,19 @@
 .instructors__container {
+  display: flex;
+  flex-direction: column;
   padding: 0 0 120px 0;
 }
 
+// title
 .instructors__title {
-  padding: 0 105px;
   margin: 0 0 62px 0;
+  padding: 0 105px;
+
+  @media (max-width: $desktop) {
+    align-self: center;
+    margin: 0 0 50px 0;
+    padding: 0;
+  }
 }
 
 .instructor-card {

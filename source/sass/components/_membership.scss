@@ -17,27 +17,30 @@
   flex-direction: column;
 }
 
+// title
 .membership__title {
   align-self: center;
   margin: 0 0 16px 0;
 
   @media (max-width: $desktop) {
     margin-bottom: 10px;
-    font-size: 42px;
   }
 
   @media (max-width: $tablet) {
     margin-bottom: 4px;
-    font-size: 32px;
   }
 }
 
 .membership__list {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 -40px -40px 0;
   padding: 0;
+}
+
+.membership__list--active {
+  display: flex;
 }
 
 .membership__item {
