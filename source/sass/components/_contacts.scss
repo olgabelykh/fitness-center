@@ -19,7 +19,7 @@
   padding: 0 60px 0 0;
 
   &:not(:last-child) {
-    border-right: 1px solid #74819c;
+    border-right: 1px solid $color-grey-2;
     @media (max-width: $tablet) {
       border: none;
       margin: 0 0 35px 0;

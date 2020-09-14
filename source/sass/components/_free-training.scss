@@ -44,7 +44,7 @@
   background: inherit;
   color: $negative-color;
   border: none;
-  border-bottom: 1px solid #74819c;
+  border-bottom: 1px solid $color-grey-2;
   outline: none;
   @media (max-width: $tablet) {
     width: 100%;

@@ -1,5 +1,5 @@
 .advantages {
-  background: #f8f9fc;
+  background: $color-grey-1;
 }
 
 .advantages__container {
@@ -96,7 +96,7 @@
   justify-content: space-between;
   width: 240px;
   height: 307px;
-  background: #1c3374;
+  background: $color-blue-2;
   color: $negative-color;
   padding: 65px 34px;
   align-self: flex-start;
@@ -156,7 +156,7 @@
 }
 
 .advantage-card--underline {
-  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  border-bottom: 2px solid $color-red-3;
 
   @media (max-width: $desktop) {
     border: none;
@@ -190,7 +190,11 @@
   line-height: 1;
   letter-spacing: 0;
   padding: 0;
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(
+    97.05deg,
+    $color-red-2 17.6%,
+    $color-blue-3 95.31%
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -201,7 +205,7 @@
 
 .advantage-card__unit {
   font: normal 400 14px/1 $main-font;
-  color: #2e35ac;
+  color: $color-blue-4;
 }
 
 .advantage-card__content {

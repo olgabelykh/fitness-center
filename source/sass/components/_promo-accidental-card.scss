@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: flex-start;
   flex-grow: 1;
-  background: #ed0233;
+  background: $color-red-2;
   padding: 45px;
 
   @media (max-width: $tablet) {

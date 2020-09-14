@@ -1,12 +1,31 @@
 // fonts
-$main-font: "Roboto Condensed", serif;
+$main-font: "Roboto Condensed", sans-serif;
 $accidental-font: "Bebas Neue", sans-serif;
 
 // colors
 $main-color: #102654;
 $negative-color: #ffffff;
+
 $color-blue-1: #003d85;
+$color-blue-2: #1c3374;
+$color-blue-3: #003eb7;
+$color-blue-4: #2e35ac;
+$color-blue-5: #103aae;
+$color-blue-6: rgba(20, 54, 122, 0.5);
+$color-blue-7: rgba(16, 38, 84, 0.89);
+
 $color-red-1: #b80027;
+$color-red-2: #ed0233;
+$color-red-3: rgba(209, 10, 66, 0.2);
+$color-red-4: #d10a42;
+
+$color-grey-1: #f8f9fc;
+$color-grey-2: #74819c;
+$color-grey-3: #030a1a;
+$color-grey-4: #e8e8e8;
+$color-grey-5: rgba(120, 120, 120, 0.2);
+
+$color-white: #ffffff;
 
 // breakpoints
 $desktop: 1365px;

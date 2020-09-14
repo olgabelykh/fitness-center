@@ -10,7 +10,11 @@
   border-style: solid;
   border-image-slice: 1;
   border-width: 7px;
-  border-image-source: linear-gradient(to right bottom, #ed0233, #003eb7);
+  border-image-source: linear-gradient(
+    to right bottom,
+    $color-red-2,
+    $color-blue-3
+  );
 }
 
 .promo-card__title h3 {
