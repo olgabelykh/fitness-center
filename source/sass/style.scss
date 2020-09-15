@@ -1,35 +1,36 @@
-@import "../../node_modules/normalize.css/normalize";
-@import "../../node_modules/swiper/swiper-vars.scss";
-@import "../../node_modules/swiper/swiper.scss";
-@import "./vars.scss";
-@import "./fonts";
-@import "./settings";
-@import "./visually-hidden";
-@import "./components/ui";
-@import "./components/about";
-@import "./effects";
-@import "./components/logo";
-@import "./components/call";
-@import "./components/header";
-@import "./components/gym";
-@import "./components/_membership";
-@import "./components/announcement";
-@import "./components/advantages";
-@import "./components/promo";
-@import "./components/promo-card";
-@import "./components/promo-accidental-card";
-@import "./components/instructors";
-@import "./components/reviews";
-@import "./components/review-card";
-@import "./components/free-training";
-@import "./components/contacts";
-@import "./components/footer";
-@import "./components/site-nav";
-@import "./components/social-list";
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/swiper/swiper-vars.scss';
+@import '../../node_modules/swiper/swiper.scss';
+@import './vars.scss';
+@import './fonts';
+@import './settings';
+@import './visually-hidden';
+@import './components/ui';
+@import './components/about';
+@import './effects';
+@import './components/logo';
+@import './components/call';
+@import './components/header';
+@import './components/gym';
+@import './components/_membership';
+@import './components/announcement';
+@import './components/advantages';
+@import './components/promo';
+@import './components/promo-card';
+@import './components/promo-accidental-card';
+@import './components/instructors';
+@import './components/reviews';
+@import './components/review-card';
+@import './components/free-training';
+@import './components/contacts';
+@import './components/footer';
+@import './components/site-nav';
+@import './components/social-list';
 
 .layout {
-  font: normal 300 16px/1.5 $main-font;
   min-height: 100vh;
+  width: 100vw;
+  font: normal 300 16px/1.5 $main-font;
 }
 
 .container {
