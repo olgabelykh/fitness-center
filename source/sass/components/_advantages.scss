@@ -96,18 +96,14 @@
 }
 
 // accidental-card
-
 .advantages-accidental-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 240px;
   height: 307px;
+  padding: 65px 34px;
   background: $color-blue-2;
   color: $negative-color;
-  padding: 65px 34px;
-  align-self: flex-start;
 
   @media (max-width: $desktop) {
     width: 442px;
@@ -121,29 +117,27 @@
   }
 }
 
-.advantages-accidental-card p {
+.advantages-accidental-card__advantage {
+  display: block;
+  width: 100%;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
-.advantages-accidental-card__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.advantages-accidental-card__value {
-  display: block;
-  font: normal 700 74px/1 $main-font;
+.advantages-accidental-card__advantage--value {
   margin: 0 0 20px 0;
+  font: normal 700 74px/1 $main-font;
 }
 
-.advantages-accidental-card__unit {
-  display: block;
+.advantages-accidental-card__advantage--unit {
+  margin: 0 0 20px 0;
   font: normal 700 26px/1 $main-font;
+}
+
+.advantages-accidental-card p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font: normal 400 16px/1.5 $main-font;
 }
 
 // card
@@ -175,6 +169,7 @@
 .advantage-card__inner {
   display: flex;
   align-items: stretch;
+  width: 100%;
 
   @media (max-width: $tablet) {
     flex-direction: column;
@@ -199,12 +194,19 @@
   line-height: 1;
   letter-spacing: 0;
   padding: 0;
-  background: linear-gradient(97.05deg, $color-red-2 17.6%, $color-blue-3 95.31%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: $color-grey-1;
+  color: $color-red-2;
 
   @media (max-width: $tablet) {
     font: normal 700 58px/1 $main-font;
+  }
+}
+
+@supports (background-clip: text) {
+  .advantage-card__value {
+    background: linear-gradient(97.05deg, $color-red-2 17.6%, $color-blue-3 95.31%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -215,13 +217,16 @@
 
 .advantage-card__content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  //flex-direction: column;
+  //justify-content: space-between;
   margin: -2px 0 -5px 0;
+  //align-items: flex-start;
 }
 
 .advantage-card__content p {
-  margin: 0;
+  width: 100%;
+  margin: auto 0 0 0;
 
   @media (max-width: $tablet) {
     text-align: center;
