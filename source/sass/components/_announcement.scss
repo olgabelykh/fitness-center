@@ -25,9 +25,13 @@
   flex-grow: 1;
   flex-direction: column;
 
-  padding: 50px 40px;
+  padding: 87px 77px 86px 77px;
   color: $negative-color;
   background: $color-red-2;
+
+  @media (max-width: $desktop) {
+    padding: 51px 45px;
+  }
 
   @media (max-width: $tablet) {
     height: 386px;
@@ -44,10 +48,15 @@
 .announcement__title {
   margin: 0;
   font: normal 700 90px/1 $accidental-font;
+  letter-spacing: 0.03em;
 
   @media (max-width: $desktop) {
     font-size: 52px;
   }
+}
+
+.announcement-title__inner-container {
+  margin: 0 0 3px 0;
 }
 
 .inner-container {
@@ -62,9 +71,10 @@
 
 .announcement__date,
 .announcement__time {
-  width: 92px;
+  width: 94px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   font: normal 400 40px/1 $main-font;
 
   @media (max-width: $desktop) {
@@ -75,33 +85,34 @@
 
 .announcement__date-name {
   position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 0 0 10px 0;
+  margin: -1px 0 0 0;
+  padding: 0 0 9px 0;
   font-size: 18px;
 
   @media (max-width: $desktop) {
     padding: 0 0 4px 0;
     font-size: 12px;
   }
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: $negative-color;
-  }
 }
 
 .announcement__date-value {
+  position: relative;
   margin: 0;
-  padding: 8px 0 0 0;
+  padding: 4px 0 0 0;
 
   @media (max-width: $desktop) {
-    padding: 2px 0 0 0;
+    padding: 8px 0 0 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $negative-color;
+    z-index: 1;
   }
 }
 
@@ -112,9 +123,10 @@
 
 .announcement__date-value--date p {
   margin: 0;
-  padding: 0 0 0 4px;
+  padding: 0 0 0 8px;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.4;
+  letter-spacing: 0;
 
   @media (max-width: $desktop) {
     font-size: 10px;
@@ -154,11 +166,10 @@
 }
 
 .announcement__image {
-  width: 49vw;
-  height: 37vw;
+  width: 50.26vw;
+  height: 38vw;
   max-width: 660px;
   max-height: 500px;
-  object-fit: cover;
   overflow: hidden;
 
   @media (max-width: $tablet) {

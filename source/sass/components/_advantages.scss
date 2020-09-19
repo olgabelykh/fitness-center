@@ -7,15 +7,19 @@
   flex-direction: column;
   align-items: center;
   padding: 120px 0;
+
+  @media (max-width: $desktop) {
+    padding: 100px 0;
+  }
 }
 
 //title
 .advantages__title {
   align-self: center;
-  margin: 0 0 80px 0;
+  margin: 0 0 68px 0;
 
   @media (max-width: $desktop) {
-    margin: 0 0 60px 0;
+    margin: 0 0 54px 0;
   }
 }
 
@@ -26,7 +30,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  max-width: 1009px;
+  max-width: 1040px;
   min-height: 307px;
 
   @media (max-width: $desktop) {
@@ -61,7 +65,7 @@
     position: static;
     transform: none;
     align-self: center;
-    margin: 50px 0;
+    margin: 48px 0;
   }
 }
 
@@ -87,6 +91,7 @@
 
     @media (max-width: $desktop) {
       flex-direction: row;
+      margin: 0 30px 0 0;
     }
 
     @media (max-width: $tablet) {
@@ -101,14 +106,14 @@
   flex-wrap: wrap;
   width: 240px;
   height: 307px;
-  padding: 65px 34px;
+  padding: 54px 34px 55px 30px;
   background: $color-blue-2;
   color: $negative-color;
 
   @media (max-width: $desktop) {
     width: 442px;
     height: 239px;
-    padding: 45px 34px;
+    padding: 32px 135px;
   }
 
   @media (max-width: $tablet) {
@@ -124,22 +129,30 @@
 }
 
 .advantages-accidental-card__advantage--value {
-  margin: 0 0 20px 0;
+  margin: 0;
   font: normal 700 74px/1 $main-font;
+  letter-spacing: 0;
 }
 
 .advantages-accidental-card__advantage--unit {
-  margin: 0 0 20px 0;
+  margin: 7px 0 38px 0;
   font: normal 700 26px/1 $main-font;
+  letter-spacing: 0;
+
+  @media (max-width: $desktop) {
+    margin: 3px 0 15px 0;
+    font: normal 700 22px/1 $main-font;
+  }
 }
 
 .advantages-accidental-card p {
+  width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
   font: normal 400 16px/1.5 $main-font;
+  letter-spacing: 0;
 }
-
 // card
 
 .advantage-card {
@@ -180,7 +193,7 @@
 .advantage-card__advantage {
   display: flex;
   flex-direction: column;
-  margin: 0 20px 0 0;
+  margin: 0 32px 0 0;
 
   @media (max-width: $tablet) {
     margin: 0 0 20px 0;
@@ -189,7 +202,7 @@
 }
 
 .advantage-card__value {
-  margin: -8px 0 0 0;
+  margin: -12px 0 0 0;
   font: normal 700 71px/1 $main-font;
   line-height: 1;
   letter-spacing: 0;
@@ -197,7 +210,7 @@
   background: $color-grey-1;
   color: $color-red-2;
 
-  @media (max-width: $tablet) {
+  @media (max-width: $desktop) {
     font: normal 700 58px/1 $main-font;
   }
 }
@@ -221,12 +234,17 @@
   //flex-direction: column;
   //justify-content: space-between;
   margin: -2px 0 -5px 0;
+
+  @media (max-width: $desktop) {
+    margin: -8px 0 -5px 0;
+  }
   //align-items: flex-start;
 }
 
 .advantage-card__content p {
   width: 100%;
-  margin: auto 0 0 0;
+  margin: 0;
+  font: normal 300 16px/1.4 $main-font;
 
   @media (max-width: $tablet) {
     text-align: center;
@@ -234,10 +252,15 @@
 }
 
 .advantage-card__content h3 {
-  margin: 0 0 15px 0;
+  margin: 1px 0 8px 0;
   padding: 0;
   font: normal 700 22px/1 $main-font;
   color: $main-color;
+
+  @media (max-width: $desktop) {
+    font: normal 700 20px/1 $main-font;
+    margin: 1px 0 5px 0;
+  }
 
   @media (max-width: $tablet) {
     text-align: center;

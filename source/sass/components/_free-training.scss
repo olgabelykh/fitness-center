@@ -1,25 +1,48 @@
 .free-training {
-  min-width: 410;
+  width: 413px;
+  margin: 0 170px 0 auto;
+
+  @media (max-width: $desktop) {
+    width: 475px;
+    margin: 0 163px 0 auto;
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 
 .free-training__title {
+  margin: 0 0 37px 0;
   color: $negative-color;
+
+  @media (max-width: $desktop) {
+    margin: 0 0 31px 0;
+  }
 }
 
 .free-training__title h2 {
   color: inherit;
 }
 
+.free-training__sign-up {
+  margin: 0;
+}
+
 .free-training__submit {
   width: 100%;
-  height: 52px;
+  height: 55px;
+  font: normal 700 14px/1 $main-font;
+  letter-spacing: 0.05em;
+  border: 3px solid $negative-color;
 }
 
 .form__field-set {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 50px 0 30px 0;
+  width: 100%;
+  margin: 0 0 28px 0;
 
   @media (max-width: $tablet) {
     flex-direction: column;
@@ -27,7 +50,15 @@
 }
 
 .form__field {
+  width: 190px;
   &:not(:last-child) {
+    margin: 0 30px 0 0;
+
+    @media (max-width: $desktop) {
+      width: 206px;
+      margin: 0 60px 0 0;
+    }
+
     @media (max-width: $tablet) {
       margin: 0 0 20px 0;
     }
@@ -43,11 +74,14 @@
 }
 
 .form__field input {
-  background: inherit;
+  width: 100%;
+  background: $main-color;
   color: $negative-color;
   border: none;
   border-bottom: 1px solid $color-grey-2;
   outline: none;
+  padding: 6px 0;
+  font: normal 400 14px/1 $main-font;
 
   @media (max-width: $tablet) {
     width: 100%;

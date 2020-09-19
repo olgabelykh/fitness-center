@@ -1,11 +1,58 @@
-.contacts__title {
-  margin: 0 0 57px 0;
+.contacts__blocks {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contacts {
+  margin: 0 auto -1px 120px;
+  @media (max-width: $desktop) {
+    margin: 0 auto 0 133px;
+  }
+  @media (max-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .contacts__groups {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 -60px 0 0;
+  margin: 0 0 0 4px;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.contacts__block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.contacts__block--dark {
+  padding: 70px 0;
+  background: $main-color;
+  color: $negative-color;
+}
+
+.contacts__title {
+  margin: 0 0 44px 0;
+
+  @media (max-width: $desktop) {
+    margin: 0 0 36px 0;
+  }
+}
+
+.contacts__groups {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 0 0 4px;
 
   @media (max-width: $tablet) {
     flex-direction: column;
@@ -17,6 +64,11 @@
   flex-direction: column;
   margin: 0 60px 0 0;
   padding: 0 60px 0 0;
+
+  @media (max-width: $desktop) {
+    margin: 0 48px 0 0;
+    padding: 0 48px 0 0;
+  }
 
   &:not(:last-child) {
     border-right: 1px solid $color-grey-2;
@@ -30,7 +82,11 @@
 
 .contacts__item {
   &:not(:last-child) {
-    margin: 0 0 30px 0;
+    margin: 0 0 26px 0;
+
+    @media (max-width: $desktop) {
+      margin: 0 0 29px 0;
+    }
   }
 }
 
@@ -40,14 +96,24 @@
 }
 
 .contact__name {
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   padding: 0;
   font: normal 700 16px/1 $main-font;
+  letter-spacing: 0;
+
+  @media (max-width: $desktop) {
+    margin: 0 0 15px 0;
+    font: normal 700 20px/1 $main-font;
+  }
 }
 
 .contact__text p {
   margin: 0;
   padding: 0;
+
+  @media (max-width: $desktop) {
+    font: normal 400 18px/1 $main-font;
+  }
 }
 
 .contact__link a {
@@ -55,4 +121,7 @@
   padding: 0;
   text-decoration: none;
   color: inherit;
+  @media (max-width: $desktop) {
+    font: normal 400 18px/1 $main-font;
+  }
 }

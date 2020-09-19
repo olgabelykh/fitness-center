@@ -51,25 +51,3 @@
     display: none;
   }
 }
-
-.contacts__blocks {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.contacts__block {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding: 70px 15px;
-  align-items: center;
-
-  @media (max-width: 1200px) {
-    width: 100%;
-  }
-}
-
-.contacts__block--dark {
-  background: #102654;
-  color: $negative-color;
-}

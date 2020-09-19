@@ -1,7 +1,7 @@
 .gym {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 120px 0 108px 0;
+  padding: 120px 0;
 
   @media (max-width: 992px) {
     padding: 100px 45px;
@@ -17,7 +17,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 0 120px 0;
+  overflow: hidden;
+  padding: 0 0 115px 0;
 
   @media (max-width: 992px) {
     flex-direction: column;
@@ -106,18 +107,29 @@
 }
 
 .gym__media {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 57%;
+  width: 660px;
+  height: 401px;
+
+  @media (max-width: $desktop) {
+    width: calc(660 * 100vw / 1366);
+    max-width: 660px;
+    height: calc(401 * 100vw / 1366);
+    max-height: 401px;
+  }
 
   @media (max-width: 992px) {
     width: 100%;
+    height: auto;
   }
 }
 
 .gym__image {
   width: 100%;
+  height: 100%;
+  overflow: hidden;
 
   @media (max-width: 320px) {
     margin: 0 0 33px 0;
@@ -125,23 +137,28 @@
 }
 
 .gym__image img {
-  width: 100%;
   height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .gym__video {
   position: absolute;
   bottom: -115px;
   left: -63px;
-  width: 56%;
-  height: auto;
+  width: calc(364 * 100vw / 1366);
+  max-width: 364px;
+  height: calc(228 * 100vw / 1366);
+  max-height: 228px;
+  overflow: hidden;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 7px;
+    bottom: 0;
     left: 0;
     background: $color-blue-6;
   }
@@ -161,18 +178,19 @@
 }
 
 .gym__video img {
-  width: 100%;
+  width: auto;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .gym-video__icon {
   position: absolute;
   left: 50%;
-  bottom: calc(50% + 7px);
+  bottom: 50%;
   transform: translateX(-50%) translateY(50%);
-  z-index: 100;
-  width: 72px;
-  height: 72px;
+  width: 100px;
+  height: 100px;
 
   @media (max-width: 992px) {
     width: 52px;
