@@ -3,8 +3,8 @@
 @import '../../node_modules/swiper/swiper.scss';
 @import './vars.scss';
 @import './fonts';
-@import './settings';
 @import './visually-hidden';
+@import './settings';
 @import './components/ui';
 @import './components/about';
 @import './effects';
@@ -28,26 +28,86 @@
 @import './components/social-list';
 
 .layout {
-  min-height: 100vh;
-  width: 100vw;
   font: normal 300 16px/1.5 $main-font;
+}
+
+.main-section {
+  padding: 120px 0;
+
+  @media ($viewport-13) {
+    padding: calc(120 * 100vw / 1366) 0;
+  }
+
+  @media ($viewport-12) {
+    padding: 100px 0;
+  }
+
+  @media ($viewport-7) {
+    padding: calc(100 * 100vw / 768) 0;
+  }
+
+  @media ($viewport-5) {
+    padding: 70px 0;
+  }
+}
+
+.main-section--top {
+  padding-top: 0;
+
+  @media ($viewport-13) {
+    padding-top: 0;
+  }
 }
 
 .container {
   max-width: 1160px;
   margin: 0 auto;
 
-  @media (max-width: 1365px) {
+  @media ($viewport-13) {
     margin: 0 45px;
   }
 
-  @media (max-width: 720px) {
+  @media ($viewport-7) {
     margin: 0 15px;
   }
 }
 
-.desktop-only {
-  @media (min-width: 1366px) {
-    display: none;
-  }
+.swiper-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slider__container {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  width: 16px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.slider__button svg {
+  width: 100%;
+  height: auto;
+  fill: none;
+}
+
+.slider__button--prev {
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) translateY(-50%) translateX(-100%);
+}
+
+.slider__button--next {
+  right: 0;
 }

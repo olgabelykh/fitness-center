@@ -6,11 +6,11 @@
   letter-spacing: 0.03em;
   color: $main-color;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     font: normal 700 42px/1 $accidental-font;
   }
 
-  @media (max-width: $tablet) {
+  @media ($viewport-7) {
     font: normal 700 32px/1 $accidental-font;
   }
 }

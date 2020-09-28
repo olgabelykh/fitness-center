@@ -1,11 +1,9 @@
 .gym {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 120px 0;
 
   @media ($viewport-13) {
     margin: 0 calc(103 * 100vw / 1366);
-    padding: calc(120 * 100vw / 1366) 0;
   }
 
   @media ($viewport-12) {
@@ -16,13 +14,11 @@
 
   @media ($viewport-7) {
     margin: 0 calc(45 * 100vw / 768);
-    padding: calc(100 * 100vw / 768) 0;
   }
 
   @media ($viewport-5) {
     max-width: 100%;
     margin: 0;
-    padding: 70px 0;
   }
 }
 

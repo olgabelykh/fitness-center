@@ -1,60 +1,65 @@
-.contacts__blocks {
+.contacts-sections {
+  display: flex;
+  flex-flow: row wrap;
   width: 100%;
-  display: flex;
-  flex-flow: row wrap;
 }
 
-.contacts {
-  margin: 0 auto -1px 120px;
-  @media (max-width: $desktop) {
-    margin: 0 auto 0 133px;
-  }
-  @media (max-width: $tablet) {
-    margin: 0;
-  }
-}
-
-.contacts__groups {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0 0 0 4px;
-
-  @media (max-width: $tablet) {
-    flex-direction: column;
-  }
-}
-
-.contacts__block {
-  width: 50%;
+.contacts-section {
   display: flex;
   flex-direction: column;
+  width: 50%;
   padding: 70px 0;
 
-  @media (max-width: 1200px) {
+  @media ($viewport-12) {
     width: 100%;
   }
 }
 
-.contacts__block--dark {
-  padding: 70px 0;
+.contacts-section--dark {
   background: $main-color;
   color: $negative-color;
+}
+
+.contacts-section--light {
+  background: $color-white;
+  color: $main-color;
+  border-top: 1px solid $main-color;
+}
+
+.contacts {
+  margin: 0 auto 0 120px;
+
+  @media ($viewport-13) {
+    margin: 0 auto 0 calc(120 * 100vw / 1366);
+  }
+
+  @media ($viewport-12) {
+    margin: 0 auto 0 133px;
+  }
+
+  @media ($viewport-7) {
+    margin: 0 auto 0 calc(133 * 100vw / 768);
+  }
+
+  @media ($viewport-5) {
+    margin: 0;
+    padding: 0 15px;
+  }
 }
 
 .contacts__title {
   margin: 0 0 44px 0;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     margin: 0 0 36px 0;
   }
 }
 
 .contacts__groups {
   display: flex;
-  flex-flow: row wrap;
   margin: 0 0 0 4px;
 
-  @media (max-width: $tablet) {
+  @media ($viewport-7) {
     flex-direction: column;
   }
 }
@@ -65,7 +70,7 @@
   margin: 0 60px 0 0;
   padding: 0 60px 0 0;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     margin: 0 48px 0 0;
     padding: 0 48px 0 0;
   }
@@ -73,7 +78,7 @@
   &:not(:last-child) {
     border-right: 1px solid $color-grey-2;
 
-    @media (max-width: $tablet) {
+    @media ($viewport-7) {
       border: none;
       margin: 0 0 35px 0;
     }
@@ -84,7 +89,7 @@
   &:not(:last-child) {
     margin: 0 0 26px 0;
 
-    @media (max-width: $desktop) {
+    @media ($viewport-12) {
       margin: 0 0 29px 0;
     }
   }
@@ -101,7 +106,7 @@
   font: normal 700 16px/1 $main-font;
   letter-spacing: 0;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     margin: 0 0 15px 0;
     font: normal 700 20px/1 $main-font;
   }
@@ -111,7 +116,7 @@
   margin: 0;
   padding: 0;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     font: normal 400 18px/1 $main-font;
   }
 }
@@ -121,7 +126,8 @@
   padding: 0;
   text-decoration: none;
   color: inherit;
-  @media (max-width: $desktop) {
+
+  @media ($viewport-12) {
     font: normal 400 18px/1 $main-font;
   }
 }

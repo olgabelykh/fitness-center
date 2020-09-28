@@ -2,12 +2,12 @@
   width: 89px;
   height: 20px;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     width: 82px;
     height: 17px;
   }
 
-  @media (max-width: $tablet) {
+  @media ($viewport-7) {
     width: 68px;
     height: 15px;
   }

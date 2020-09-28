@@ -1,15 +1,5 @@
 .membership {
-  width: 100%;
-  padding: 120px 0;
   background: $color-grey-1;
-
-  @media (max-width: $desktop) {
-    padding: 100px 0;
-  }
-
-  @media (max-width: $tablet) {
-    padding: 70px 0;
-  }
 }
 
 .membership__container {
@@ -21,27 +11,24 @@
 // title
 .membership__title {
   align-self: center;
-  margin: 0 0 16px 0;
+  margin: 0 0 38px 0;
 
-  @media (max-width: $desktop) {
-    margin-bottom: 10px;
+  @media ($viewport-12) {
+    margin-bottom: 34px;
   }
 
-  @media (max-width: $tablet) {
-    margin-bottom: 4px;
+  @media ($viewport-5) {
+    margin-bottom: 24px;
   }
 }
 
 .membership__list {
   display: none;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 -40px -40px 0;
 
-  @media (max-width: $tablet) {
-    margin: 0 0 -40px 0;
+  @media ($viewport-12) {
+    flex-direction: column;
+    align-items: center;
   }
-  padding: 0;
 }
 
 .membership__list--active {
@@ -49,9 +36,16 @@
 }
 
 .membership__item {
-  margin: 0 40px 40px 0;
-  @media (max-width: $tablet) {
-    margin: 0 0 40px 0;
+  &:not(:last-child) {
+    margin: 0 40px 0 0;
+
+    @media ($viewport-12) {
+      margin: 0 0 40px 0;
+    }
+
+    @media ($viewport-5) {
+      margin: 0 0 35px 0;
+    }
   }
 }
 
@@ -63,20 +57,20 @@
   align-items: center;
   width: 360px;
   height: 448px;
-  padding: 63px 0 61px 0;
+  padding: 58px 0 61px 0;
   color: $main-color;
   background: $color-white;
   border: 7px solid $color-white;
   z-index: 100;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     width: 442px;
   }
 
-  @media (max-width: $tablet) {
-    padding: 48px 0 58px 0;
+  @media ($viewport-5) {
     width: 290px;
     height: 384px;
+    padding: 45px 0 47px 0;
   }
 
   &:hover {
@@ -97,18 +91,19 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: -6px 0 12px 0;
+  margin: 0 0 12px 0;
   padding: 0;
   font: normal 700 1.625rem/1 $main-font;
 
-  @media (max-width: $tablet) {
+  @media ($viewport-5) {
+    margin: 0 0 10px 0;
     font-size: 22px;
   }
 }
 
 .membership-card__details p {
-  padding: 0;
   margin: 0;
+  padding: 0;
   font: normal 300 1rem/1.5 $main-font;
   text-align: center;
 }
@@ -125,7 +120,7 @@
   text-align: center;
   color: $color-grey-4;
 
-  @media (max-width: $tablet) {
+  @media ($viewport-5) {
     font-size: 80px;
   }
 }
@@ -142,7 +137,7 @@
   letter-spacing: 0;
   color: $color-blue-5;
 
-  @media (max-width: $tablet) {
+  @media ($viewport-5) {
     font-size: 48px;
   }
 }
@@ -153,20 +148,19 @@
 
 .membership__tab-list {
   position: relative;
-  list-style: none;
-  align-self: center;
-  margin: 0 0 38px 0;
-  padding: 0;
   display: flex;
-  width: 340px;
   justify-content: space-between;
+  align-self: center;
+  width: 340px;
+  margin: 0 0 37px 0;
+  padding: 0;
 
-  @media (max-width: $desktop) {
-    margin-bottom: 45px;
+  @media ($viewport-12) {
+    margin-bottom: 41px;
   }
 
-  @media (max-width: $tablet) {
-    margin-bottom: 30px;
+  @media ($viewport-5) {
+    margin-bottom: 34px;
   }
 
   @media (max-width: 320px) {
@@ -185,15 +179,15 @@
 }
 
 .membership__tab-item {
+  padding: 0 0 19px 0;
   font: normal 400 20px/1 $main-font;
   color: $main-color;
-  padding: 20px 0;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     font-size: 18px;
   }
 
-  @media (max-width: $tablet) {
+  @media ($viewport-5) {
     font-size: 16px;
   }
 }

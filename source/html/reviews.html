@@ -1,17 +1,17 @@
-<section class="reviews slider--reviews" id="reviews">
+<section class="main-section main-section--top reviews" id="reviews">
   <div class="container reviews__container">
     <div class="title reviews__title">
       <h2>Отзывы</h2>
     </div>
-    <div class="reviews-slider__wrapper">
-      <button class="slider__button slider__button--prev" type="button">
+    <div class="slider reviews__slider reviews-slider">
+      <button class="slider__button slider__button--prev" type="button" aria-label="Назад">
         <svg width="16" height="32">
           <use xlink:href="#icon-arrow"></use>
         </svg>
       </button>
       <div class="swiper-container">
-        <div class="swiper-wrapper reviews__list">
-          <div class="reviews__item swiper-slide review-card">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide review-card">
             <div class="review-card__image">
               <picture>
                 <source
@@ -36,7 +36,7 @@
               </div>
             </blockquote>
           </div>
-          <div class="reviews__item swiper-slide review-card">
+          <div class="swiper-slide review-card">
             <div class="review-card__image">
               <picture>
                 <source
@@ -61,7 +61,7 @@
               </div>
             </blockquote>
           </div>
-          <div class="reviews__item swiper-slide review-card">
+          <div class="swiper-slide review-card">
             <div class="review-card__image">
               <picture>
                 <source
@@ -88,7 +88,7 @@
           </div>
         </div>
       </div>
-      <button class="slider__button slider__button--next" type="button">
+      <button class="slider__button slider__button--next" type="button" aria-label="Вперед">
         <svg width="16" height="32">
           <use xlink:href="#icon-arrow"></use>
         </svg>

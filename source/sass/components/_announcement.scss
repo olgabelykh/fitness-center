@@ -1,20 +1,11 @@
 .announcement {
   width: 100%;
-  padding: 120px 0;
-
-  @media (max-width: $desktop) {
-    padding: 100px 0;
-  }
-
-  @media (max-width: $tablet) {
-    padding: 70px 0;
-  }
 }
 
 .announcement__container {
   display: flex;
 
-  @media (max-width: $tablet) {
+  @media ($viewport-5) {
     flex-direction: column;
     align-items: center;
   }
@@ -24,24 +15,26 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-
-  padding: 87px 77px 86px 77px;
+  padding: 87px 77px;
   color: $negative-color;
   background: $color-red-2;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-13) {
+    padding: calc(87 * 100vw / 1366) calc(77 * 100vw / 1366);
+  }
+
+  @media ($viewport-12) {
     padding: 51px 45px;
   }
 
-  @media (max-width: $tablet) {
-    height: 386px;
-    width: 100%;
-    max-width: 386px;
+  @media ($viewport-7) {
+    width: 386px;
   }
 
-  @media (max-width: 320px) {
+  @media ($viewport-5) {
+    width: 100%;
+    max-width: 386px;
     height: 292px;
-    width: 292px;
   }
 }
 
@@ -50,8 +43,12 @@
   font: normal 700 90px/1 $accidental-font;
   letter-spacing: 0.03em;
 
-  @media (max-width: $desktop) {
-    font-size: 52px;
+  @media ($viewport-13) {
+    font: normal 700 calc(90 * 100vw / 1366) / 1 $accidental-font;
+  }
+
+  @media ($viewport-7) {
+    font: normal 700 52px/1 $accidental-font;
   }
 }
 
@@ -77,7 +74,7 @@
   align-items: flex-start;
   font: normal 400 40px/1 $main-font;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-13) {
     width: 56px;
     font-size: 24px;
   }
@@ -89,7 +86,7 @@
   padding: 0 0 9px 0;
   font-size: 18px;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-13) {
     padding: 0 0 4px 0;
     font-size: 12px;
   }
@@ -100,7 +97,7 @@
   margin: 0;
   padding: 4px 0 0 0;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-13) {
     padding: 8px 0 0 0;
   }
 
@@ -128,7 +125,7 @@
   line-height: 1.4;
   letter-spacing: 0;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-13) {
     font-size: 10px;
     line-height: 1.2;
   }
@@ -143,7 +140,7 @@
   width: 100%;
   font: normal 400 18px/1.5 $main-font;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-13) {
     font-size: 12px;
   }
 }
@@ -158,7 +155,7 @@
   height: 69px;
   margin: auto 0 0 0;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-13) {
     height: 39px;
     font-size: 10px;
     border-width: 2px;
@@ -166,25 +163,33 @@
 }
 
 .announcement__image {
-  width: 50.26vw;
-  height: 38vw;
-  max-width: 660px;
-  max-height: 500px;
+  width: 660px;
+  height: 500px;
   overflow: hidden;
 
-  @media (max-width: $tablet) {
-    width: 100%;
-    max-width: 386px;
-    height: 292px;
+  @media ($viewport-13) {
+    width: calc(660 * 100vw / 1366);
+    min-width: 386px;
+    height: calc(500 * 100vw / 1366);
+    min-height: 292px;
   }
 
-  @media (max-width: 320px) {
-    width: 290px;
-    height: 290px;
+  @media ($viewport-7) {
+    min-width: auto;
+    max-width: 386px;
+  }
+
+  @media ($viewport-5) {
+    width: 100%;
+    min-width: 290px;
+    height: 292px;
+    min-height: auto;
   }
 }
 
 .announcement__image img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }

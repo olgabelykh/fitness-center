@@ -13,11 +13,11 @@
   /* stylelint-enable */
   background: -ms-linear-gradient(45deg, $color-blue-1 0%, $color-red-1 100%);
 
-  @media (max-width: 1200px) {
+  @media ($viewport-12) {
     padding: 82px 0;
   }
 
-  @media (max-width: 320px) {
+  @media ($viewport-5) {
     padding: 115px 0 83px 0;
   }
 }
@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 720px) {
+  @media ($viewport-7) {
     justify-content: center;
   }
 }
@@ -39,12 +39,12 @@
   padding: 0 0 0 18px;
   color: $negative-color;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     margin-bottom: 26px;
     padding-left: 0;
   }
 
-  @media (max-width: $tablet) {
+  @media ($viewport-7) {
     margin: 0;
     padding: 0;
   }
@@ -55,11 +55,11 @@
   letter-spacing: 0.03em;
   text-align: right;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     font-size: 34px;
   }
 
-  @media (max-width: $tablet) {
+  @media ($viewport-7) {
     font-size: 28px;
   }
 }
@@ -75,12 +75,12 @@
   letter-spacing: 0.03em;
   text-align: right;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     margin-top: 8px;
     font-size: 86px;
   }
 
-  @media (max-width: $tablet) {
+  @media ($viewport-7) {
     font-size: 78px;
   }
 
@@ -124,11 +124,11 @@
   margin: 12px 34px 0 0;
   order: -1;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     margin: 2px 30px 0 0;
   }
 
-  @media (max-width: $tablet) {
+  @media ($viewport-7) {
     margin-right: 13px;
   }
 }
@@ -143,11 +143,11 @@
   margin: 50px -1px -2px 0;
   align-self: flex-end;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     margin-top: 34px;
   }
 
-  @media (max-width: 320px) {
+  @media ($viewport-5) {
     width: 100%;
     margin-top: 38px;
   }
@@ -157,11 +157,11 @@
   width: 234px;
   height: 61px;
 
-  @media (max-width: $desktop) {
+  @media ($viewport-12) {
     width: 187px;
   }
 
-  @media (max-width: 320px) {
+  @media ($viewport-5) {
     width: 100%;
   }
 }
@@ -171,13 +171,13 @@
   max-height: 556px;
   margin: 0 124px 0 0;
 
-  @media (max-width: 1200px) {
+  @media ($viewport-12) {
     max-width: 324px;
     max-height: 390px;
     margin: 0;
   }
 
-  @media (max-width: 720px) {
+  @media ($viewport-7) {
     display: none;
   }
 }
@@ -192,7 +192,7 @@
   display: flex;
   align-items: flex-end;
 
-  @media (max-width: 960px) {
+  @media ($viewport-7) {
     display: none;
   }
 }

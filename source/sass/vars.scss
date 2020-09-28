@@ -27,12 +27,8 @@ $color-grey-5: rgba(120, 120, 120, 0.2);
 
 $color-white: #ffffff;
 
-// breakpoints
-$desktop: 1365px;
-$tablet: 767px;
-$mobile: 319px;
-
-$viewport-13: 'max-width: 1365.99px';
-$viewport-12: 'max-width: 1199.99px';
-$viewport-7: 'max-width: 767.99px';
-$viewport-5: 'max-width: 575.99px';
+// viewports
+$viewport-13: 'max-width: 1365px';
+$viewport-12: 'max-width: 1199px';
+$viewport-7: 'max-width: 767px';
+$viewport-5: 'max-width: 575px';
