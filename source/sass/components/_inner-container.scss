@@ -1,0 +1,10 @@
+// inner container
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container__row {
+  display: flex;
+  justify-content: space-between;
+}

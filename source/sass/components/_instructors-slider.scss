@@ -1,0 +1,12 @@
+.instructors-slider {
+  position: relative;
+  display: flex;
+  width: calc(100% - 94px);
+  max-width: 1366px;
+  padding: 0 56px;
+
+  @media ($viewport-7) {
+    width: calc(100% - 30px);
+    padding: 0 32px;
+  }
+}

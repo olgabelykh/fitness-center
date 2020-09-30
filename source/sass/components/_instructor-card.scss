@@ -1,0 +1,107 @@
+//card
+.instructor-card {
+  position: relative;
+  width: 260px;
+  height: 294px;
+  overflow: hidden;
+
+  @media ($viewport-12) {
+    width: 268px;
+    height: 294px;
+  }
+
+  @media ($viewport-7) {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.instructor-card:hover .instructor-card__content {
+  height: 100%;
+}
+
+.instructor-card:hover .instructor-card__details {
+  height: auto;
+  opacity: 1;
+}
+
+.instructor-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: $color-blue-7;
+  opacity: 0;
+  transition: height 0.3s, opacity 0.3s;
+}
+
+.instructor-card:hover::before {
+  height: 100%;
+  opacity: 1;
+}
+
+// image
+.instructor-card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.instructor-card__image img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+// content
+.instructor-card__content {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  min-height: 101px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 55px 0 54px;
+  color: $negative-color;
+}
+
+// name
+.instructor-card__name h3 {
+  font: normal 700 18px/1.5 $main-font;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+// details
+.instructor-card__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 0;
+  overflow: auto;
+  font: normal 300 14px/1.5 $main-font;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+// type
+.instructor-card__type p {
+  margin: 0 0 25px 0;
+}
+
+// details
+.instructor-card__details-list {
+  padding: 0 0 0 16px;
+  list-style: disc;
+}
+
+.instructor-card__details-item {
+  &:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}

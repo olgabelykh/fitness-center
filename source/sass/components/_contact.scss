@@ -1,0 +1,36 @@
+.contact {
+  font: normal 400 14px/1 $main-font;
+  color: $main-color;
+}
+
+.contact__name {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font: normal 700 16px/1 $main-font;
+  letter-spacing: 0;
+
+  @media ($viewport-12) {
+    margin: 0 0 15px 0;
+    font: normal 700 20px/1 $main-font;
+  }
+}
+
+.contact__text p {
+  margin: 0;
+  padding: 0;
+
+  @media ($viewport-12) {
+    font: normal 400 18px/1 $main-font;
+  }
+}
+
+.contact__link a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+
+  @media ($viewport-12) {
+    font: normal 400 18px/1 $main-font;
+  }
+}

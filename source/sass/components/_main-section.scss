@@ -1,0 +1,27 @@
+.main-section {
+  padding: 120px 0;
+
+  @media ($viewport-13) {
+    padding: calc(120 * 100vw / 1366) 0;
+  }
+
+  @media ($viewport-12) {
+    padding: 100px 0;
+  }
+
+  @media ($viewport-7) {
+    padding: calc(100 * 100vw / 768) 0;
+  }
+
+  @media ($viewport-5) {
+    padding: 70px 0;
+  }
+}
+
+.main-section--top {
+  padding-top: 0;
+
+  @media ($viewport-13) {
+    padding-top: 0;
+  }
+}

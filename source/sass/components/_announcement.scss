@@ -1,7 +1,9 @@
+// section
 .announcement {
   width: 100%;
 }
 
+// container
 .announcement__container {
   display: flex;
 
@@ -11,6 +13,7 @@
   }
 }
 
+// content
 .announcement__content {
   display: flex;
   flex-grow: 1;
@@ -38,20 +41,12 @@
   }
 }
 
+//title container
 .announcement__title-container {
   margin: 0 0 3px 0;
 }
 
-.inner-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.inner-container__row {
-  display: flex;
-  justify-content: space-between;
-}
-
+// title
 .announcement__title {
   margin: 0;
   font: normal 700 90px/1 $accidental-font;
@@ -66,6 +61,7 @@
   }
 }
 
+// date
 .announcement__date {
   width: 94px;
   display: flex;
@@ -75,22 +71,24 @@
 
   @media ($viewport-13) {
     width: 56px;
-    font-size: 24px;
+    font: normal 400 24px/1 $main-font;
   }
 }
 
+// date name
 .announcement__date-name {
   position: relative;
   margin: -1px 0 0 0;
   padding: 0 0 9px 0;
-  font-size: 18px;
+  font: normal 400 18px/1 $main-font;
 
   @media ($viewport-13) {
     padding: 0 0 4px 0;
-    font-size: 12px;
+    font: normal 400 12px/1 $main-font;
   }
 }
 
+// date value
 .announcement__date-value {
   position: relative;
   margin: 0;
@@ -120,27 +118,22 @@
 .announcement__date-value--date p {
   margin: 0;
   padding: 0 0 0 8px;
-  font-size: 14px;
-  line-height: 1.4;
+  font: normal 400 14px/1.4 $main-font;
   letter-spacing: 0;
 
   @media ($viewport-13) {
-    font-size: 10px;
+    font: normal 400 10px/1.4 $main-font;
     line-height: 1.2;
   }
 }
 
-.date-container {
-  display: flex;
-  flex-direction: column;
-}
-
+// text
 .announcement__text {
   width: 100%;
   font: normal 400 18px/1.5 $main-font;
 
   @media ($viewport-13) {
-    font-size: 12px;
+    font: normal 400 12px/1.5 $main-font;
   }
 }
 
@@ -148,6 +141,7 @@
   margin: 0;
 }
 
+// button
 .announcement__button {
   align-self: flex-end;
   width: 100%;
@@ -156,11 +150,12 @@
 
   @media ($viewport-13) {
     height: 39px;
-    font-size: 10px;
+    font: normal 700 10px/1 $main-font;
     border-width: 2px;
   }
 }
 
+// image
 .announcement__image {
   width: 660px;
   height: 500px;

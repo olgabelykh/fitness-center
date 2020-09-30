@@ -1,0 +1,115 @@
+// card
+.advantage-card {
+  display: flex;
+  align-items: flex-start;
+  width: 340px;
+
+  @media ($viewport-7) {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+}
+
+.advantage-card--bottom {
+  align-items: flex-end;
+}
+
+.advantage-card--underline {
+  border-bottom: 2px solid $color-red-3;
+
+  @media ($viewport-13) {
+    border: none;
+  }
+}
+
+.advantage-card__inner {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+
+  @media ($viewport-7) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantage-card__advantage {
+  display: flex;
+  flex-direction: column;
+  margin: 0 32px 0 0;
+
+  @media ($viewport-7) {
+    margin: 0 0 20px 0;
+    align-items: center;
+  }
+}
+
+.advantage-card__value {
+  margin: -12px 0 0 0;
+  font: normal 700 71px/1 $main-font;
+  line-height: 1;
+  letter-spacing: 0;
+  padding: 0;
+  background: $color-grey-1;
+  color: $color-red-2;
+
+  @media ($viewport-12) {
+    font: normal 700 58px/1 $main-font;
+  }
+
+  @media ($viewport-7) {
+    margin: 0;
+  }
+}
+
+@supports (background-clip: text) {
+  .advantage-card__value {
+    background: linear-gradient(97.05deg, $color-red-2 17.6%, $color-blue-3 95.31%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.advantage-card__unit {
+  font: normal 400 14px/1 $main-font;
+  color: $color-blue-4;
+}
+
+.advantage-card__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -2px 0 -5px 0;
+
+  @media ($viewport-12) {
+    margin: -8px 0 -5px 0;
+  }
+}
+
+.advantage-card__content p {
+  width: 100%;
+  margin: 0;
+  font: normal 300 16px/1.4 $main-font;
+
+  @media ($viewport-7) {
+    text-align: center;
+  }
+}
+
+.advantage-card__content h3 {
+  width: 100%;
+  margin: 1px 0 8px 0;
+  padding: 0;
+  font: normal 700 22px/1 $main-font;
+  color: $main-color;
+
+  @media ($viewport-12) {
+    font: normal 700 20px/1 $main-font;
+    margin: 1px 0 6px 0;
+  }
+
+  @media ($viewport-7) {
+    text-align: center;
+    font: normal 700 20px/1 $main-font;
+  }
+}

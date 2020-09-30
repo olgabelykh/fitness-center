@@ -1,0 +1,16 @@
+.title h2 {
+  margin: 0;
+  padding: 0;
+  font: normal 700 49px/1 $accidental-font;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $main-color;
+
+  @media ($viewport-12) {
+    font: normal 700 42px/1 $accidental-font;
+  }
+
+  @media ($viewport-7) {
+    font: normal 700 32px/1 $accidental-font;
+  }
+}

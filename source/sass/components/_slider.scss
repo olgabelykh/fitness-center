@@ -1,0 +1,34 @@
+.slider__container {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  width: 16px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.slider__button svg {
+  width: 100%;
+  height: auto;
+  fill: none;
+}
+
+.slider__button--prev {
+  left: 0;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) translateY(-50%) translateX(-100%);
+}
+
+.slider__button--next {
+  right: 0;
+}

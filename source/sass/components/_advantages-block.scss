@@ -1,0 +1,32 @@
+// block
+.advantages-block {
+  display: flex;
+  justify-content: space-between;
+
+  @media ($viewport-7) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+//item
+.advantages-block__item {
+  height: 100%;
+
+  @media ($viewport-12) {
+    height: auto;
+  }
+
+  &:not(:last-child) {
+    margin: 0 40px 0 0;
+
+    @media ($viewport-12) {
+      flex-direction: row;
+      margin: 0 30px 0 0;
+    }
+
+    @media ($viewport-7) {
+      margin: 0 0 42px 0;
+    }
+  }
+}

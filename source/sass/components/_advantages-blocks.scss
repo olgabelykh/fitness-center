@@ -1,0 +1,49 @@
+// blocks
+.advantages-blocks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1040px;
+  min-height: 307px;
+
+  @media ($viewport-12) {
+    height: auto;
+  }
+}
+
+.advantages-blocks__block {
+  height: 153.5px;
+
+  @media ($viewport-12) {
+    height: auto;
+    padding: 0 45px;
+  }
+}
+
+.advantages-blocks__block--bottom {
+  align-items: flex-end;
+}
+
+.advantages-blocks__block--accidental {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 0;
+
+  @media ($viewport-13) {
+    position: static;
+    transform: none;
+    align-self: center;
+    margin: 48px 0;
+  }
+
+  @media ($viewport-7) {
+    margin: 50px 0 42px 0;
+  }
+}
