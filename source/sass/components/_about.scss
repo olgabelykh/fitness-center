@@ -2,6 +2,7 @@
   width: 100%;
   padding: 51px 0;
   background: $color-blue-1;
+  background: radial-gradient(circle at 40% 25%, $color-red-1 0%, $color-blue-1 100%);
   /* stylelint-disable */
   background: conic-gradient(
     from 130.31deg at 16.03% 39.06%,
@@ -11,7 +12,6 @@
     $color-blue-1 392.24deg
   );
   /* stylelint-enable */
-  background: -ms-linear-gradient(45deg, $color-blue-1 0%, $color-red-1 100%);
 
   @media ($viewport-12) {
     padding: 82px 0;
@@ -192,7 +192,7 @@
   display: flex;
   align-items: flex-end;
 
-  @media ($viewport-7) {
+  @media ($viewport-12) {
     display: none;
   }
 }

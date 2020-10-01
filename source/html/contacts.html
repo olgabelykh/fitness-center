@@ -11,8 +11,14 @@
             <input type="text" id="sign-up-name" placeholder="Имя" required />
           </div>
           <div class="form__field">
-            <label class="visually-hidden" for="sign-up-email">Телефон</label>
-            <input id="sign-up-email" type="email" placeholder="Телефон" required />
+            <label class="visually-hidden" for="sign-up-tel">Телефон</label>
+            <input
+              id="sign-up-tel"
+              type="tel"
+              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+              placeholder="Телефон"
+              required
+            />
           </div>
         </div>
         <button class="button button--accidental free-training__submit" type="submit">
