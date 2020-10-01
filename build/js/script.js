@@ -45,8 +45,8 @@
     spaceBetween: 0,
     loopedSlides: 3,
     loop: true,
-    loopFillGroupWithBlank: true,
-    updateOnWindowResize: true,
+    // loopFillGroupWithBlank: true,
+    // updateOnWindowResize: true,
 
     navigation: {
       nextEl: ".reviews-slider .slider__button--next",
