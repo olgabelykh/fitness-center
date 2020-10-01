@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 42px 44px;
+  padding: 42px 44px 44px 44px;
   background: $color-red-2;
 
   @media ($viewport-7) {
@@ -26,11 +26,13 @@
 
 // period
 .promo-accidental-card__period {
+  margin: 0 0 2px 0;
   font: normal 700 28px/1 $main-font;
 }
 
 //price
 .promo-accidental-card__price {
+  margin: 0 0 18px 0;
   font: normal 700 70px/1 $main-font;
 }
 
@@ -55,8 +57,9 @@
 .promo-accidental-card__link a {
   position: relative;
   margin: 0;
-  padding: 0 0 6px 0;
+  padding: 0 0 2px 0;
   font: normal 700 14px/1 $main-font;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: inherit;
 

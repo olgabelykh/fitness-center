@@ -3,6 +3,7 @@
   display: flex;
   align-items: flex-start;
   width: 340px;
+  color: $main-color;
 
   @media ($viewport-7) {
     width: 100%;
@@ -34,10 +35,14 @@
   }
 }
 
+.advantage-card__inner--right {
+  justify-content: flex-end;
+}
+
 .advantage-card__advantage {
   display: flex;
   flex-direction: column;
-  margin: 0 32px 0 0;
+  margin: 0 29px 0 0;
 
   @media ($viewport-7) {
     margin: 0 0 20px 0;
@@ -78,7 +83,7 @@
 
 .advantage-card__content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: -2px 0 -5px 0;
 
   @media ($viewport-12) {
@@ -86,10 +91,18 @@
   }
 }
 
+.advantage-card__content--area {
+  max-width: 176px;
+}
+
+.advantage-card__content--comfort {
+  max-width: 183px;
+}
+
 .advantage-card__content p {
-  width: 100%;
   margin: 0;
   font: normal 300 16px/1.4 $main-font;
+  letter-spacing: 0;
 
   @media ($viewport-7) {
     text-align: center;
@@ -97,8 +110,7 @@
 }
 
 .advantage-card__content h3 {
-  width: 100%;
-  margin: 1px 0 8px 0;
+  margin: 1px 0 12px 0;
   padding: 0;
   font: normal 700 22px/1 $main-font;
   color: $main-color;

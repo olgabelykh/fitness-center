@@ -1,6 +1,6 @@
 .free-training {
   width: 413px;
-  margin: 0 170px 0 auto;
+  margin: 0 168px 0 auto;
 
   @media ($viewport-13) {
     margin: 0 calc(170 * 100vw / 1366) 0 auto;
@@ -90,11 +90,12 @@
 
 .form__field input {
   width: 100%;
+  padding: 6px 0;
+  font: normal 400 14px/1 $main-font;
   background: $main-color;
   color: $negative-color;
   border: none;
   outline: none;
-  padding: 6px 0;
   caret-color: $negative-color;
 
   @media ($viewport-7) {
