@@ -10,10 +10,7 @@
   var instructorsSwiper = new Swiper(instructorsSlider, {
     slidesPerView: 1,
     spaceBetween: 0,
-    loopedSlides: 8,
     loop: true,
-    loopFillGroupWithBlank: true,
-    updateOnWindowResize: true,
 
     navigation: {
       nextEl: ".instructors-slider .slider__button--next",
@@ -45,8 +42,6 @@
     spaceBetween: 0,
     loopedSlides: 3,
     loop: true,
-    // loopFillGroupWithBlank: true,
-    // updateOnWindowResize: true,
 
     navigation: {
       nextEl: ".reviews-slider .slider__button--next",

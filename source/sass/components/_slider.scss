@@ -21,6 +21,11 @@
     outline: 5px auto rgba(153, 153, 158, 0.65);
     outline-offset: 5px;
   }
+
+  &:hover,
+  &:active {
+    outline: none;
+  }
 }
 
 .slider__button svg {

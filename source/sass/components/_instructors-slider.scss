@@ -6,7 +6,8 @@
   padding: 0 56px;
 
   @media ($viewport-7) {
-    width: calc(100% - 30px);
+    justify-content: center;
+    width: 290px;
     padding: 0 32px;
   }
 }

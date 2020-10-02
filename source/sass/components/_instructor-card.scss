@@ -68,6 +68,10 @@
   align-items: center;
   padding: 50px 55px 0 54px;
   color: $negative-color;
+
+  @media ($viewport-5) {
+    padding: 40px 34px 0 34px;
+  }
 }
 
 // name
