@@ -26,6 +26,10 @@
     }
   }
 
+  @media ($viewport-12) {
+    width: 206px;
+  }
+
   @media ($viewport-7) {
     width: 100%;
   }

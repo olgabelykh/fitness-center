@@ -5,6 +5,10 @@
   max-width: 1272px;
   padding: 0 56px;
 
+  @media ($viewport-12) {
+    width: calc(100% - 90px);
+  }
+
   @media ($viewport-7) {
     justify-content: center;
     width: 290px;

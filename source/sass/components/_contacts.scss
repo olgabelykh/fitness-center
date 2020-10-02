@@ -31,6 +31,10 @@
   display: flex;
   margin: 0 0 0 4px;
 
+  @media ($viewport-12) {
+    margin: 0;
+  }
+
   @media ($viewport-7) {
     flex-direction: column;
   }
