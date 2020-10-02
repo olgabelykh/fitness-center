@@ -15,6 +15,12 @@
   width: 16px;
   height: 32px;
   overflow: hidden;
+
+  &:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px auto rgba(153, 153, 158, 0.65);
+    outline-offset: 5px;
+  }
 }
 
 .slider__button svg {
