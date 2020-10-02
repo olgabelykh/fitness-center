@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 (function () {
-  var instructorsSlider = document.querySelector('#instructors').querySelector('.swiper-container');
+  var instructorsSlider = document.querySelector("#instructors").querySelector(".swiper-container");
 
   if (!instructorsSlider) {
     return;
@@ -16,17 +16,17 @@
     updateOnWindowResize: true,
 
     navigation: {
-      nextEl: '.instructors-slider .slider__button--next',
-      prevEl: '.instructors-slider .slider__button--prev',
+      nextEl: ".instructors-slider .slider__button--next",
+      prevEl: ".instructors-slider .slider__button--prev",
     },
 
     breakpoints: {
       768: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 30,
       },
       1200: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 40,
       },
     },
@@ -34,7 +34,7 @@
 })();
 
 (function () {
-  var reviewsSlider = document.querySelector('#reviews').querySelector('.swiper-container');
+  var reviewsSlider = document.querySelector("#reviews").querySelector(".swiper-container");
 
   if (!reviewsSlider) {
     return;
@@ -49,37 +49,37 @@
     updateOnWindowResize: true,
 
     navigation: {
-      nextEl: '.reviews-slider .slider__button--next',
-      prevEl: '.reviews-slider .slider__button--prev',
+      nextEl: ".reviews-slider .slider__button--next",
+      prevEl: ".reviews-slider .slider__button--prev",
     },
   });
 })();
 
 (function () {
-  var membershipTabs = document.querySelector('#membership-tabs');
+  var membershipTabs = document.querySelector("#membership-tabs");
 
   if (!membershipTabs) {
     return;
   }
 
-  membershipTabs.querySelectorAll('.membership__tab-item').forEach(function (item) {
-    item.addEventListener('click', function (event) {
+  membershipTabs.querySelectorAll(".membership__tab-item").forEach(function (item) {
+    item.addEventListener("click", function (event) {
       event.preventDefault();
 
-      var activeTab = membershipTabs.querySelector('.membership__tab-item--active');
+      var activeTab = membershipTabs.querySelector(".membership__tab-item--active");
       if (item.isSameNode(activeTab)) {
         return;
       }
-      activeTab.classList.remove('membership__tab-item--active');
-      item.classList.add('membership__tab-item--active');
+      activeTab.classList.remove("membership__tab-item--active");
+      item.classList.add("membership__tab-item--active");
 
-      var activeListId = activeTab.querySelector('a').getAttribute('href');
-      var newActiveListId = item.querySelector('a').getAttribute('href');
+      var activeListId = activeTab.querySelector("a").getAttribute("href");
+      var newActiveListId = item.querySelector("a").getAttribute("href");
 
       var activeList = document.querySelector(activeListId);
-      activeList.classList.remove('membership__list--active');
+      activeList.classList.remove("membership__list--active");
       var newActiveList = document.querySelector(newActiveListId);
-      newActiveList.classList.add('membership__list--active');
+      newActiveList.classList.add("membership__list--active");
     });
   });
 })();
