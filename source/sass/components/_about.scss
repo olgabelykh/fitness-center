@@ -170,13 +170,21 @@
 }
 
 .about__image {
-  max-width: 500px;
-  max-height: 556px;
+  width: 500px;
+  height: 556px;
   margin: 0 124px 0 0;
+  overflow: hidden;
 
-  @media ($viewport-12) {
-    max-width: 324px;
-    max-height: 390px;
+  @media ($viewport-13) {
+    width: calc(500 * 100vw / 1366);
+    min-width: 324px;
+    height: calc(556 * 100vw / 1366);
+    min-height: 390px;
+  }
+
+  @media ($viewport-9) {
+    width: 324px;
+    height: 390px;
     margin: 0;
   }
 
@@ -186,8 +194,10 @@
 }
 
 .about__image img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .about__social-list {

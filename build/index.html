@@ -97,11 +97,10 @@
     </div>
     <div class="about__image">
       <picture>
-        <source type="image/webp" media="(max-width: 1200px)" srcset="img/main-tab@1x.webp 1x, img/main-tab@2x.webp 2x">
-        <source type="image/png" media="(max-width: 1200px)" srcset="img/main-tab@1x.png 1x, img/main-tab@2x.png 2x">
-        <source type="image/webp" srcset="img/main@1x.webp 1x, img/main@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 768px)" srcset="img/main-tab@1x.webp 1x, img/main-tab@2x.webp 2x">
         <source type="image/png" srcset="img/main@1x.png 1x, img/main@2x.png 2x">
-        <img src="img/main@1x.png" alt="Супермен в фитнес центре" width="500" height="556">
+        <!-- 1x: 500px; 2x: 1000px -->
+        <img src="img/main@1x.png" srcset="img/main@1x.png 1x, img/main@2x.png" alt="Супермен в фитнес центре" width="500" height="556">
       </picture>
     </div>
     <div class="about__social-list">
@@ -173,10 +172,10 @@
       </div>
       <div class="gym__video gym-video">
         <picture>
-          <source type="image/webp" media="(max-width: 575.99px)" srcset="img/gym-mob-2@1x.webp 1x, img/gym-mob-2@2x.webp 2x">
-          <source type="image/jpg" media="(max-width: 575.99px)" srcset="img/gym-mob-2@1x.jpg 1x, img/gym-mob-2@2x.jpg 2x">
-          <source type="image/webp" media="(max-width: 1199.99px)" srcset="img/gym-tab-2@1x.webp 1x, img/gym-tab-2@2x.webp 2x">
-          <source type="image/jpg" media="(max-width: 1199.99px)" srcset="img/gym-tab-2@1x.jpg 1x, img/gym-tab-2@2x.jpg 2x">
+          <source type="image/webp" media="(max-width: 575px)" srcset="img/gym-mob-2@1x.webp 1x, img/gym-mob-2@2x.webp 2x">
+          <source type="image/jpg" media="(max-width: 575px)" srcset="img/gym-mob-2@1x.jpg 1x, img/gym-mob-2@2x.jpg 2x">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tab-2@1x.webp 1x, img/gym-tab-2@2x.webp 2x">
+          <source type="image/jpg" media="(max-width: 1199px)" srcset="img/gym-tab-2@1x.jpg 1x, img/gym-tab-2@2x.jpg 2x">
           <source type="image/webp" srcset="img/gym-2@1x.webp 1x, img/gym-2@2x.webp 2x">
           <source type="image/jpg" srcset="img/gym-2@1x.jpg 1x, img/gym-2@2x.jpg 2x">
           <img src="./img/gym-2@1x.jpg" alt="Силовые тренажеры в спортивном зале" width="364">
@@ -410,13 +409,11 @@
         <div class="swiper-wrapper">
           <!-- Карточка инструктора -->
           <div class="instructors__slider-item swiper-slide instructor-card">
-            <div class="instructor-card__image">
-              <picture>
-                <source type="image/webp" srcset="img/instructor-1@1x.webp 1x, img/instructor-1@2x.webp 2x">
-                <source type="image/jpg" srcset="img/instructor-1@1x.jpg 1x, img/instructor-1@2x.jpg 2x">
-                <img src="img/instructor-1@1x.jpg" alt="Тренер Анна Павлова" width="260" height="294">
-              </picture>
-            </div>
+            <picture>
+              <source type="image/webp" srcset="img/instructor-1@1x.webp 1x, img/instructor-1@2x.webp 2x">
+              <source type="image/jpg" srcset="img/instructor-1@1x.jpg 1x, img/instructor-1@2x.jpg 2x">
+              <img class="instructor-card__image" src="img/instructor-1@1x.jpg" alt="Тренер Анна Павлова" width="260" height="294">
+            </picture>
             <div class="instructor-card__content">
               <div class="instructor-card__name">
                 <h3>Анна Павлова</h3>
@@ -437,13 +434,11 @@
           </div>
           <!-- Карточка инструктора -->
           <div class="instructors__slider-item swiper-slide instructor-card">
-            <div class="instructor-card__image">
-              <picture>
-                <source type="image/webp" srcset="img/instructor-2@1x.webp 1x, img/instructor-2@2x.webp 2x">
-                <source type="image/jpg" srcset="img/instructor-2@1x.jpg 1x, img/instructor-2@2x.jpg 2x">
-                <img src="img/instructor-2@1x.jpg" alt="Тренер Алексей Лавров" width="260" height="294">
-              </picture>
-            </div>
+            <picture>
+              <source type="image/webp" srcset="img/instructor-2@1x.webp 1x, img/instructor-2@2x.webp 2x">
+              <source type="image/jpg" srcset="img/instructor-2@1x.jpg 1x, img/instructor-2@2x.jpg 2x">
+              <img class="instructor-card__image" src="img/instructor-2@1x.jpg" alt="Тренер Алексей Лавров" width="260" height="294">
+            </picture>
             <div class="instructor-card__content">
               <div class="instructor-card__name">
                 <h3>Алексей Лавров</h3>
@@ -464,13 +459,11 @@
           </div>
           <!-- Карточка инструктора -->
           <div class="instructors__slider-item swiper-slide instructor-card">
-            <div class="instructor-card__image">
-              <picture>
-                <source type="image/webp" srcset="img/instructor-3@1x.webp 1x, img/instructor-3@2x.webp 2x">
-                <source type="image/jpg" srcset="img/instructor-3@1x.jpg 1x, img/instructor-3@2x.jpg 2x">
-                <img src="img/instructor-3@1x.jpg" alt="Тренер Александр Пашков" width="260" height="294">
-              </picture>
-            </div>
+            <picture>
+              <source type="image/webp" srcset="img/instructor-3@1x.webp 1x, img/instructor-3@2x.webp 2x">
+              <source type="image/jpg" srcset="img/instructor-3@1x.jpg 1x, img/instructor-3@2x.jpg 2x">
+              <img class="instructor-card__image" src="img/instructor-3@1x.jpg" alt="Тренер Александр Пашков" width="260" height="294">
+            </picture>
             <div class="instructor-card__content">
               <div class="instructor-card__name">
                 <h3>Александр Пашков</h3>
@@ -491,13 +484,11 @@
           </div>
           <!-- Карточка инструктора -->
           <div class="instructors__slider-item swiper-slide instructor-card">
-            <div class="instructor-card__image">
-              <picture>
-                <source type="image/webp" srcset="img/instructor-4@1x.webp 1x, img/instructor-4@2x.webp 2x">
-                <source type="image/jpg" srcset="img/instructor-4@1x.jpg 1x, img/instructor-4@2x.jpg 2x">
-                <img src="img/instructor-4@1x.jpg" alt="Тренер Мария Кетова" width="260" height="294">
-              </picture>
-            </div>
+            <picture>
+              <source type="image/webp" srcset="img/instructor-4@1x.webp 1x, img/instructor-4@2x.webp 2x">
+              <source type="image/jpg" srcset="img/instructor-4@1x.jpg 1x, img/instructor-4@2x.jpg 2x">
+              <img class="instructor-card__image" src="img/instructor-4@1x.jpg" alt="Тренер Мария Кетова" width="260" height="294">
+            </picture>
             <div class="instructor-card__content">
               <div class="instructor-card__name">
                 <h3>Мария Кетова</h3>

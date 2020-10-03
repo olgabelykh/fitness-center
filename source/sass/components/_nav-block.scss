@@ -8,6 +8,12 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
+
+  &:not(:last-child) {
+    @media ($viewport-7) {
+      margin: 0 30px 0 0;
+    }
+  }
 }
 
 .nav-block__item {
@@ -17,13 +23,18 @@
     margin: 0 30px 0 0;
   }
 
+  @media ($viewport-7) {
+    font: normal 400 16px/1 $main-font;
+    letter-spacing: 0;
+  }
+
   &:not(:last-child) {
     @media ($viewport-12) {
       margin: 0 30px 0 0;
     }
 
     @media ($viewport-7) {
-      margin: 0 0 30px 0;
+      margin: 0 0 24px 0;
     }
   }
 }
@@ -38,6 +49,10 @@
   &:not(:last-child) {
     @media ($viewport-12) {
       margin: 0 62px 0 0;
+    }
+
+    @media ($viewport-7) {
+      margin: 0 0 24px 0;
     }
   }
 }

@@ -20,7 +20,7 @@
 
   @media ($viewport-7) {
     align-items: center;
-    min-height: 301px;
+    min-height: 299px;
   }
 }
 
@@ -34,11 +34,17 @@
 .promo-accidental-card__price {
   margin: 0 0 18px 0;
   font: normal 700 70px/1 $main-font;
+  letter-spacing: 0;
+
+  @media ($viewport-7) {
+    margin: 0 0 13px 0;
+  }
 }
 
 //text
 .promo-accidental-card__text {
   @media ($viewport-7) {
+    max-width: 189px;
     text-align: center;
   }
 }
