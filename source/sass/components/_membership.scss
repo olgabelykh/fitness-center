@@ -24,11 +24,11 @@
 
 .membership__list {
   display: none;
-  margin: 0;
+  margin: 0 0 -40px 0;
   padding: 0;
   list-style: none;
 
-  @media ($viewport-12) {
+  @media ($viewport-13) {
     flex-direction: column;
     align-items: center;
   }
@@ -36,13 +36,20 @@
 
 .membership__list--active {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .membership__item {
-  &:not(:last-child) {
-    margin: 0 40px 0 0;
+  margin: 0 0 40px 0;
 
-    @media ($viewport-12) {
+  @media ($viewport-5) {
+    margin: 0 0 35px 0;
+  }
+
+  &:not(:nth-of-type(3n + 3)) {
+    margin: 0 40px 40px 0;
+
+    @media ($viewport-13) {
       margin: 0 0 40px 0;
     }
 

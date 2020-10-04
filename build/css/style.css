@@ -1185,10 +1185,10 @@ a {
 
 .membership__list {
   display: none;
-  margin: 0;
+  margin: 0 0 -40px 0;
   padding: 0;
   list-style: none; }
-  @media (max-width: 1199px) {
+  @media (max-width: 1365px) {
     .membership__list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1201,16 +1201,23 @@ a {
 .membership__list--active {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
-.membership__item:not(:last-child) {
-  margin: 0 40px 0 0; }
-  @media (max-width: 1199px) {
-    .membership__item:not(:last-child) {
-      margin: 0 0 40px 0; } }
+.membership__item {
+  margin: 0 0 40px 0; }
   @media (max-width: 575px) {
-    .membership__item:not(:last-child) {
+    .membership__item {
       margin: 0 0 35px 0; } }
+  .membership__item:not(:nth-of-type(3n + 3)) {
+    margin: 0 40px 40px 0; }
+    @media (max-width: 1365px) {
+      .membership__item:not(:nth-of-type(3n + 3)) {
+        margin: 0 0 40px 0; } }
+    @media (max-width: 575px) {
+      .membership__item:not(:nth-of-type(3n + 3)) {
+        margin: 0 0 35px 0; } }
 
 .membership__tab-list {
   position: relative;
@@ -1289,7 +1296,7 @@ a {
   background: #ffffff;
   border: 7px solid #ffffff;
   z-index: 100; }
-  @media (max-width: 1199px) {
+  @media (max-width: 1365px) {
     .membership-card {
       width: 442px; } }
   @media (max-width: 575px) {
@@ -1974,7 +1981,8 @@ a {
       text-align: center; } }
 
 .promo-card__link {
-  margin: auto 0 0 0; }
+  margin: auto 0 0 0;
+  padding: 35px 0 0 0; }
 
 .promo-card__link a {
   position: relative;
