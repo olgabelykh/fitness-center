@@ -2,13 +2,15 @@
   display: flex;
   align-items: center;
   margin: 0 -25px 0 0;
+  padding: 0;
+  list-style: none;
 
   @media ($viewport-12) {
     margin: 0 -20px 0 0;
   }
 
   @media ($viewport-7) {
-    margin: 50px -35px 0 0;
+    margin: 40px 0 -8px 0;
   }
 }
 
@@ -20,6 +22,6 @@
   }
 
   @media ($viewport-7) {
-    margin: 0 35px 0 0;
+    margin: 0 40px 0 0;
   }
 }

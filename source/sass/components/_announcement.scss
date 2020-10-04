@@ -18,7 +18,7 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  padding: 87px 77px;
+  padding: 85px 76px;
   color: $negative-color;
   background: $color-red-2;
 
@@ -27,7 +27,7 @@
   }
 
   @media ($viewport-12) {
-    padding: 51px 45px;
+    padding: 49px 43px;
   }
 
   @media ($viewport-7) {
@@ -43,7 +43,11 @@
 
 //title container
 .announcement__title-container {
-  margin: 0 0 3px 0;
+  margin: 3px 0 3px 2px;
+
+  @media ($viewport-12) {
+    margin: 2px 0 -2px 2px;
+  }
 }
 
 // title
@@ -56,21 +60,22 @@
     font: normal 700 calc(90 * 100vw / 1366) / 1 $accidental-font;
   }
 
-  @media ($viewport-7) {
+  @media ($viewport-12) {
     font: normal 700 52px/1 $accidental-font;
   }
 }
 
 // date
 .announcement__date {
-  width: 94px;
+  width: 95px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font: normal 400 40px/1 $main-font;
+  letter-spacing: 0;
 
   @media ($viewport-13) {
-    width: 56px;
+    width: 58px;
     font: normal 400 24px/1 $main-font;
   }
 }
@@ -78,12 +83,12 @@
 // date name
 .announcement__date-name {
   position: relative;
-  margin: -1px 0 0 0;
+  margin: -3px 0 0 0;
   padding: 0 0 9px 0;
   font: normal 400 18px/1 $main-font;
 
-  @media ($viewport-13) {
-    padding: 0 0 4px 0;
+  @media ($viewport-12) {
+    padding: 2px 0 4px 0;
     font: normal 400 12px/1 $main-font;
   }
 }
@@ -92,10 +97,10 @@
 .announcement__date-value {
   position: relative;
   margin: 0;
-  padding: 4px 0 0 0;
+  padding: 6px 0 0 0;
 
-  @media ($viewport-13) {
-    padding: 8px 0 0 0;
+  @media ($viewport-12) {
+    padding: 4px 0 0 0;
   }
 
   &::before {
@@ -122,6 +127,7 @@
   letter-spacing: 0;
 
   @media ($viewport-13) {
+    padding: 0 0 0 4px;
     font: normal 400 10px/1.4 $main-font;
     line-height: 1.2;
   }
@@ -131,6 +137,7 @@
 .announcement__text {
   width: 100%;
   font: normal 400 18px/1.5 $main-font;
+  margin: 0 0 0 2px;
 
   @media ($viewport-13) {
     font: normal 400 12px/1.5 $main-font;
@@ -145,11 +152,11 @@
 .announcement__button {
   align-self: flex-end;
   width: 100%;
-  height: 69px;
+  height: 71px;
   margin: auto 0 0 0;
 
   @media ($viewport-13) {
-    height: 39px;
+    height: 41px;
     font: normal 700 10px/1 $main-font;
     border-width: 2px;
   }

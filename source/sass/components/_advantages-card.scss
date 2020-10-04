@@ -37,6 +37,10 @@
 
 .advantage-card__inner--right {
   justify-content: flex-end;
+
+  @media ($viewport-12) {
+    justify-content: flex-start;
+  }
 }
 
 .advantage-card__advantage {

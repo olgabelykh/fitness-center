@@ -39,17 +39,18 @@
       <picture>
         <source
           type="image/webp"
-          media="(max-width: 1200px)"
+          media="(max-width: 768px)"
           srcset="img/main-tab@1x.webp 1x, img/main-tab@2x.webp 2x"
         />
-        <source
-          type="image/png"
-          media="(max-width: 1200px)"
-          srcset="img/main-tab@1x.png 1x, img/main-tab@2x.png 2x"
-        />
-        <source type="image/webp" srcset="img/main@1x.webp 1x, img/main@2x.webp 2x" />
         <source type="image/png" srcset="img/main@1x.png 1x, img/main@2x.png 2x" />
-        <img src="img/main@1x.png" alt="Супермен в фитнес центре" width="500" height="556" />
+        <!-- 1x: 500px; 2x: 1000px -->
+        <img
+          src="img/main@1x.png"
+          srcset="img/main@1x.png 1x, img/main@2x.png"
+          alt="Супермен в фитнес центре"
+          width="500"
+          height="556"
+        />
       </picture>
     </div>
     <div class="about__social-list">
