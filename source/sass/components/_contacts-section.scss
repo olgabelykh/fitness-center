@@ -19,3 +19,31 @@
   color: $main-color;
   border-top: 1px solid $main-color;
 }
+
+.contacts-section__inner--left {
+  margin: 0 168px 0 auto;
+
+  @media ($viewport-13) {
+    margin: 0 calc(170 * 100vw / 1366) 0 auto;
+  }
+
+  @media ($viewport-12) {
+    margin: 0 auto;
+  }
+}
+
+.contacts-section__inner--right {
+  margin: 0 auto 0 120px;
+
+  @media ($viewport-13) {
+    margin: 0 auto 0 calc(120 * 100vw / 1366);
+  }
+
+  @media ($viewport-12) {
+    margin: 0 auto;
+  }
+
+  @media ($viewport-5) {
+    margin: 0;
+  }
+}
