@@ -10,7 +10,7 @@
   margin: 0 auto 50px auto;
 
   @media ($viewport-13) {
-    width: 100%;
+    width: calc(100% - 45px);
     margin: 0 45px 50px 45px;
   }
 

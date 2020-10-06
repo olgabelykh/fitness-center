@@ -7,15 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Фитнес центр Supergym</title>
     <link rel="preload" href="fonts/roboto-condensed-english-cyrillic-300-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-english-cyrillic-300-normal.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-english-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-english-cyrillic-400-normal.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-english-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/roboto-condensed-english-cyrillic-700-normal.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="/fonts/bebas-neue-english-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/bebas-neue-english-cyrillic-400-normal.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="/fonts/bebas-neue-english-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/bebas-neue-english-cyrillic-700-normal.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="layout">
@@ -55,16 +50,14 @@
 </symbol></svg>
     </div>
     <header class="main-header">
-  <div class="main-header__container container">
-    <div class="logo">
+  <div class="container main-header__container">
+    <div class="logo main-header__logo">
       <svg width="89" height="20">
         <use xlink:href="#icon-logo"></use>
       </svg>
     </div>
-    <div class="call opacity-effect">
-      <a href="tel:+78005555555" aria-label="Телефон для связи">
-        8-800-555-55-55
-      </a>
+    <div class="call main-header__call opacity-effect">
+      <a href="tel:+78005555555" aria-label="Телефон для связи"> 8-800-555-55-55 </a>
     </div>
   </div>
 </header>
@@ -80,17 +73,17 @@
       <div class="about__location">
         <p>Омск</p>
       </div>
-      <div class="about__title about__title-container">
-        <div class="about__title-row">
-          <div class="about__title-col about__title-header">
+      <div class="inner-container about__title-container">
+        <div class="inner-container__row inner-container__row--align-right">
+          <div class="inner-container__col about__title">
             <p>Фитнес</p>
           </div>
         </div>
-        <div class="about__title-row">
-          <div class="about__title-col about__title-header">
+        <div class="inner-container__row inner-container__row--align-right">
+          <div class="inner-container__col about__title">
             <p>центр</p>
           </div>
-          <div class="about__title-col about__title-lead">
+          <div class="inner-container__col about__lead">
             <ul class="about__features-list">
               <li class="about__features-item">Тренажёрный зал</li>
               <li class="about__features-item">Групповые&nbsp;занятия</li>
@@ -114,28 +107,28 @@
       </picture>
     </div>
     <div class="about__social-list">
-      <ul class="social-list">
-        <li class="social-list__item">
+      <ul class="about-social-list">
+        <li class="about-social-list__item">
           <a href="#" aria-label="Наш фейсбук">
-            <div class="social-list__icon social-list__icon--fb opacity-effect">
+            <div class="about-social-list__icon about-social-list__icon--fb opacity-effect">
               <svg width="12" height="9">
                 <use xlink:href="#icon-fb-type"></use>
               </svg>
             </div>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="about-social-list__item">
           <a href="#" aria-label="Наша страница во Вконтакте">
-            <div class="social-list__icon social-list__icon--vk opacity-effect">
+            <div class="about-social-list__icon about-social-list__icon--vk opacity-effect">
               <svg width="14" height="9">
                 <use xlink:href="#icon-vk-type"></use>
               </svg>
             </div>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="about-social-list__item">
           <a href="#" aria-label="Наш инстаграмм">
-            <div class="social-list__icon social-list__icon--ig opacity-effect">
+            <div class="about-social-list__icon about-social-list__icon--ig opacity-effect">
               <svg width="11" height="9">
                 <use xlink:href="#icon-instagram-type"></use>
               </svg>
@@ -222,7 +215,7 @@
             <p>5000&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <button class="button opacity-effect" type="button">Купить абонемент</button>
+        <a class="button opacity-effect" type="button">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -237,7 +230,7 @@
             <p>1700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <button class="button opacity-effect" type="button">Купить абонемент</button>
+        <a class="button opacity-effect" type="button">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -252,7 +245,7 @@
             <p>2700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <button class="button opacity-effect" type="button">Купить абонемент</button>
+        <a class="button opacity-effect" type="button">Купить абонемент</a>
       </li>
     </ul>
     <ul class="membership__list" id="membership-month-6">
@@ -269,7 +262,7 @@
             <p>30000&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <button class="button opacity-effect" type="button">Купить абонемент</button>
+        <a class="button opacity-effect" type="button">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -284,7 +277,7 @@
             <p>1700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <button class="button opacity-effect" type="button">Купить абонемент</button>
+        <a class="button opacity-effect" type="button">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -299,7 +292,7 @@
             <p>2700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <button class="button opacity-effect" type="button">Купить абонемент</button>
+        <a class="button opacity-effect" type="button">Купить абонемент</a>
       </li>
     </ul>
     <ul class="membership__list" id="membership-month-12">
@@ -316,7 +309,7 @@
             <p>50000&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <button class="button opacity-effect" type="button">Купить абонемент</button>
+        <a class="button opacity-effect" type="button">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -331,7 +324,7 @@
             <p>1700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <button class="button opacity-effect" type="button">Купить абонемент</button>
+        <a class="button opacity-effect" type="button">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -346,7 +339,7 @@
             <p>2700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <button class="button opacity-effect" type="button">Купить абонемент</button>
+        <a class="button opacity-effect" type="button">Купить абонемент</a>
       </li>
     </ul>
   </div>
@@ -359,7 +352,7 @@
     </div>
     <div class="announcement__content">
       <div class="announcement__title-container inner-container">
-        <div class="inner-container__row">
+        <div class="inner-container__row inner-container__row--align-space-between">
           <div class="announcement__title inner-container__col">SUPER</div>
           <div class="announcement__date inner-container__col">
             <span class="announcement__date-name">Дата</span>
@@ -369,7 +362,7 @@
             </div>
           </div>
         </div>
-        <div class="inner-container__row">
+        <div class="inner-container__row inner-container__row--align-space-between">
           <div class="announcement__title inner-container__col">GAMES</div>
           <div class="announcement__date inner-container__col">
             <span class="announcement__date-name">Время</span>

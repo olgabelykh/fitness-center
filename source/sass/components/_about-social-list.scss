@@ -1,4 +1,5 @@
-.social-list {
+// list
+.about-social-list {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -7,34 +8,39 @@
   list-style: none;
 }
 
-.social-list__item {
+// item
+.about-social-list__item {
   &:not(:last-child) {
     margin: 0 0 24px 0;
   }
 }
 
-.social-list__icon {
+// icon
+.about-social-list__icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-list__icon svg {
+.about-social-list__icon svg {
   width: 100%;
   height: 100%;
 }
 
-.social-list__icon--fb {
+// fb
+.about-social-list__icon--fb {
   width: 13px;
   height: 9px;
 }
 
-.social-list__icon--vk {
+//vk
+.about-social-list__icon--vk {
   width: 14px;
   height: 9px;
 }
 
-.social-list__icon--ig {
+//ig
+.about-social-list__icon--ig {
   width: 11px;
   height: 9px;
 }

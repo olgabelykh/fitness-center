@@ -6,7 +6,7 @@
   align-items: center;
   width: 360px;
   height: 448px;
-  padding: 58px 0 61px 0;
+  padding: 57px 0 60px 0;
   color: $main-color;
   background: $color-white;
   border: 7px solid $color-white;
@@ -42,52 +42,55 @@
   justify-content: center;
   margin: 0 0 12px 0;
   padding: 0;
-  font: normal 700 1.625rem/1 $main-font;
+  font: normal 700 26px/1 $main-font;
+  letter-spacing: 0;
 
   @media ($viewport-5) {
     margin: 0 0 10px 0;
-    font-size: 22px;
+    font: normal 700 22px/1 $main-font;
   }
 }
 
 .membership-card__details p {
   margin: 0;
   padding: 0;
-  font: normal 300 1rem/1.5 $main-font;
+  font: normal 300 16px/1.5 $main-font;
+  letter-spacing: 0;
   text-align: center;
 }
 
 .membership-card__price {
   position: relative;
-  padding: 0 0 10px 0;
+  padding: 0 0 15px 0;
 }
 
 .membership-card__price-shadow {
   margin: 0;
   padding: 0;
-  font: normal 700 6.25rem/1 $main-font;
+  font: normal 700 100px/1 $main-font;
+  letter-spacing: 0;
   text-align: center;
   color: $color-grey-4;
 
   @media ($viewport-5) {
-    font-size: 80px;
+    font: normal 700 80px/1 $main-font;
   }
 }
 
 .membership-card__price-value p {
   position: absolute;
   left: 50%;
-  bottom: 7px;
+  bottom: 11px;
   transform: translateX(-50%);
   margin: 0;
   padding: 0;
-  font: normal 700 4rem/1 $main-font;
+  font: normal 700 60px/1 $main-font;
   text-align: center;
   letter-spacing: 0;
   color: $color-blue-5;
 
   @media ($viewport-5) {
-    font-size: 48px;
+    font: normal 700 48px/1 $main-font;
   }
 }
 
