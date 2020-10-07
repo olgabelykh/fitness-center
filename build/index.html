@@ -9,8 +9,8 @@
     <link rel="preload" href="fonts/roboto-condensed-english-cyrillic-300-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-english-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto-condensed-english-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/bebas-neue-english-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/bebas-neue-english-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bebas-neue-english-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bebas-neue-english-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="layout">
@@ -103,7 +103,7 @@
         <source type="image/webp" media="(max-width: 768px)" srcset="img/main-tab@1x.webp 1x, img/main-tab@2x.webp 2x">
         <source type="image/png" srcset="img/main@1x.png 1x, img/main@2x.png 2x">
         <!-- 1x: 500px; 2x: 1000px -->
-        <img src="img/main@1x.png" srcset="img/main@1x.png 1x, img/main@2x.png" alt="Супермен в фитнес центре" width="500" height="556">
+        <img src="img/main@1x.png" srcset="img/main@1x.png 1x, img/main@2x.png 2x" alt="Супермен в фитнес центре" width="500" height="556">
       </picture>
     </div>
     <div class="about__social-list">
@@ -215,7 +215,7 @@
             <p>5000&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <a class="button opacity-effect" type="button">Купить абонемент</a>
+        <a class="button opacity-effect" href="#">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -230,7 +230,7 @@
             <p>1700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <a class="button opacity-effect" type="button">Купить абонемент</a>
+        <a class="button opacity-effect" href="#">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -245,7 +245,7 @@
             <p>2700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <a class="button opacity-effect" type="button">Купить абонемент</a>
+        <a class="button opacity-effect" href="#">Купить абонемент</a>
       </li>
     </ul>
     <ul class="membership__list" id="membership-month-6">
@@ -262,7 +262,7 @@
             <p>30000&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <a class="button opacity-effect" type="button">Купить абонемент</a>
+        <a class="button opacity-effect" href="#">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -277,7 +277,7 @@
             <p>1700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <a class="button opacity-effect" type="button">Купить абонемент</a>
+        <a class="button opacity-effect" href="#">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -292,7 +292,7 @@
             <p>2700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <a class="button opacity-effect" type="button">Купить абонемент</a>
+        <a class="button opacity-effect" href="#">Купить абонемент</a>
       </li>
     </ul>
     <ul class="membership__list" id="membership-month-12">
@@ -309,7 +309,7 @@
             <p>50000&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <a class="button opacity-effect" type="button">Купить абонемент</a>
+        <a class="button opacity-effect" href="#">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -324,7 +324,7 @@
             <p>1700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <a class="button opacity-effect" type="button">Купить абонемент</a>
+        <a class="button opacity-effect" href="#">Купить абонемент</a>
       </li>
       <li class="membership__item membership-card">
         <div class="membership-card__title">
@@ -339,7 +339,7 @@
             <p>2700&nbsp;<span class="membership-card__price-currency">₽</span></p>
           </div>
         </div>
-        <a class="button opacity-effect" type="button">Купить абонемент</a>
+        <a class="button opacity-effect" href="#">Купить абонемент</a>
       </li>
     </ul>
   </div>
@@ -393,8 +393,10 @@
 
       <section class="main-section main-section--top instructors" id="instructors">
   <div class="instructors__container">
-    <div class="title instructors__title">
-      <h2>Тренеры</h2>
+    <div class="container instructors__title-container">
+      <div class="title instructors__title">
+        <h2>Тренеры</h2>
+      </div>
     </div>
     <div class="slider instructors__slider instructors-slider">
       <button class="slider__button slider__button--prev" type="button">
@@ -590,7 +592,7 @@
               <span class="advantage-card__value">5+</span>
               <span class="advantage-card__unit">лет</span>
             </div>
-            <div class="advantage-card__content">
+            <div class="advantage-card__content advantage-card__content--instructors">
               <h3 class="advantage-card__title">Тренерский опыт</h3>
               <p class="advantage-card__text">
                 Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером
@@ -829,7 +831,7 @@
       </div>
     </nav>
     <ul class="social-icons">
-      <li class="social-icons__icon social-icon opacity-effect">
+      <li class="social-icons__icon social-icon social-icons__icon--vk opacity-effect">
         <a href="#" aria-label="Наша страница во Вконтакте">
           <div class="social-icon__icon">
             <svg width="24" height="13">
@@ -838,7 +840,7 @@
           </div>
         </a>
       </li>
-      <li class="social-icons__icon social-icon opacity-effect">
+      <li class="social-icons__icon social-icon social-icons__icon--ig opacity-effect">
         <a href="#" aria-label="Наш инстаграмм">
           <div class="social-icon__icon">
             <svg width="24" height="24">
@@ -847,7 +849,7 @@
           </div>
         </a>
       </li>
-      <li class="social-icons__icon social-icon opacity-effect">
+      <li class="social-icons__icon social-icon social-icons__icon--fb opacity-effect">
         <a href="#" aria-label="Наш фейсбук">
           <div class="social-icon__icon">
             <svg width="12" height="24">

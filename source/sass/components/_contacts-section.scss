@@ -2,10 +2,16 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 70px 0 68px 0;
+  padding: 70px 0 67px 0;
 
   @media ($viewport-12) {
     width: 100%;
+    padding: 70px 0 67px 0;
+  }
+
+  @media ($viewport-7) {
+    width: 100%;
+    padding: 70px 0 68px 0;
   }
 }
 
@@ -21,7 +27,7 @@
 }
 
 .contacts-section__inner--left {
-  margin: 0 168px 0 auto;
+  margin: 0 167px 0 auto;
 
   @media ($viewport-13) {
     margin: 0 calc(170 * 100vw / 1366) 0 auto;

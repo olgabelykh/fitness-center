@@ -4,6 +4,10 @@
   width: 672px;
   padding: 0 56px;
 
+  @media ($viewport-12) {
+    width: 678px;
+  }
+
   @media ($viewport-7) {
     flex-direction: column;
     width: 290px;

@@ -1,27 +1,75 @@
 .social-icons {
   display: flex;
-  align-items: center;
-  margin: 0 -25px 0 0;
+  align-items: flex-end;
+  height: 24px;
+  margin: -2px -25px 0 0;
   padding: 0;
   list-style: none;
 
   @media ($viewport-12) {
+    height: 24px;
     margin: 0 -20px 0 0;
   }
 
   @media ($viewport-7) {
-    margin: 40px 0 -8px 0;
+    height: 27px;
+    margin: 37px 0 0 0;
   }
 }
 
-.social-icons__icon {
-  margin: 0 25px 0 0;
+.social-icons__icon--vk {
+  margin: 0 25px 0px 0;
 
   @media ($viewport-12) {
-    margin: 0 20px 0 0;
+    margin: 0 20px 2px 0;
   }
 
   @media ($viewport-7) {
-    margin: 0 40px 0 0;
+    margin: 0 35px -1px 0;
+  }
+}
+
+.social-icons__icon--vk svg {
+  @media ($viewport-7) {
+    width: 32px;
+    height: 17px;
+  }
+}
+
+.social-icons__icon--ig {
+  margin: 0 25px -7px 0;
+
+  @media ($viewport-12) {
+    margin: 0 20px -3px 0;
+  }
+
+  @media ($viewport-7) {
+    margin: 0 35px -6px 0;
+  }
+}
+
+.social-icons__icon--ig svg {
+  @media ($viewport-7) {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.social-icons__icon--fb {
+  margin: 0 25px -7px 0;
+
+  @media ($viewport-12) {
+    margin: 0 20px -3px 0;
+  }
+
+  @media ($viewport-7) {
+    margin: 0 35px -6px 0;
+  }
+}
+
+.social-icons__icon--fb svg {
+  @media ($viewport-7) {
+    width: 14px;
+    height: 27px;
   }
 }
