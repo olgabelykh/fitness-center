@@ -11,14 +11,16 @@
   width: 100%;
   padding: 0 0 50px 0;
 
-  @media ($viewport-12) {
+  @media ($viewport-13) {
+    width: auto;
     align-items: center;
-    width: calc(100% - 90px);
+  }
+
+  @media ($viewport-12) {
     padding: 0 0 39px 0;
   }
 
   @media ($viewport-7) {
-    width: calc(100% - 30px);
     padding: 0 0 42px 0;
   }
 }

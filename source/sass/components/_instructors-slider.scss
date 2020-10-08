@@ -1,12 +1,15 @@
 .instructors-slider {
   position: relative;
   display: flex;
-  width: calc(100% - 94px);
-  max-width: 1272px;
+  width: 1272px;
   padding: 0 56px;
 
+  @media ($viewport-13) {
+    width: 972px;
+  }
+
   @media ($viewport-12) {
-    width: calc(100% - 90px);
+    width: 678px;
   }
 
   @media ($viewport-7) {

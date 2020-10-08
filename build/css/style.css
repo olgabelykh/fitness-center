@@ -1046,6 +1046,10 @@ a {
      object-fit: cover;
   -o-object-position: center;
      object-position: center; }
+  @media (max-width: 1199px) {
+    .gym__image img {
+      width: 100%;
+      height: auto; } }
 
 .gym__video {
   position: absolute;
@@ -2130,16 +2134,17 @@ a {
           flex-direction: column;
   width: 100%;
   padding: 0 0 50px 0; }
-  @media (max-width: 1199px) {
+  @media (max-width: 1365px) {
     .instructors__title-container {
+      width: auto;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      width: calc(100% - 90px);
+              align-items: center; } }
+  @media (max-width: 1199px) {
+    .instructors__title-container {
       padding: 0 0 39px 0; } }
   @media (max-width: 767px) {
     .instructors__title-container {
-      width: calc(100% - 30px);
       padding: 0 0 42px 0; } }
 
 .instructors__title {
@@ -2281,12 +2286,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(100% - 94px);
-  max-width: 1272px;
+  width: 1272px;
   padding: 0 56px; }
+  @media (max-width: 1365px) {
+    .instructors-slider {
+      width: 972px; } }
   @media (max-width: 1199px) {
     .instructors-slider {
-      width: calc(100% - 90px); } }
+      width: 678px; } }
   @media (max-width: 767px) {
     .instructors-slider {
       -webkit-box-pack: center;
@@ -2685,13 +2692,13 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   height: 24px;
-  margin: -2px -25px 0 0;
+  margin: -2px 0 0 0;
   padding: 0;
   list-style: none; }
   @media (max-width: 1199px) {
     .social-icons {
       height: 24px;
-      margin: 0 -20px 0 0; } }
+      margin: 0; } }
   @media (max-width: 767px) {
     .social-icons {
       height: 27px;
@@ -2726,13 +2733,13 @@ a {
     height: 27px; } }
 
 .social-icons__icon--fb {
-  margin: 0 25px -7px 0; }
+  margin: 0 0 -7px 0; }
   @media (max-width: 1199px) {
     .social-icons__icon--fb {
-      margin: 0 20px -3px 0; } }
+      margin: 0 0 -3px 0; } }
   @media (max-width: 767px) {
     .social-icons__icon--fb {
-      margin: 0 35px -6px 0; } }
+      margin: 0 0 -6px 0; } }
 
 @media (max-width: 767px) {
   .social-icons__icon--fb svg {
