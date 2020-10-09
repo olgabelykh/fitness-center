@@ -2240,7 +2240,7 @@ a {
           align-items: center;
   padding: 50px 46px 0 54px;
   color: #ffffff; }
-  @media (max-width: 575px) {
+  @media (max-width: 767px) {
     .instructor-card__content {
       padding: 40px 34px 0 34px; } }
 
